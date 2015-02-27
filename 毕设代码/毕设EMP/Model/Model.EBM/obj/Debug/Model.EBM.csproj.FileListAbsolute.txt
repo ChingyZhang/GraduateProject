@@ -1,0 +1,6 @@
+C:\YSLCRM\YSLEMMP.root\Model\Model.EBM\bin\Debug\MCSFramework.Model.EBM.dll
+C:\YSLCRM\YSLEMMP.root\Model\Model.EBM\bin\Debug\MCSFramework.Model.EBM.pdb
+C:\YSLCRM\YSLEMMP.root\Model\Model.EBM\bin\Debug\MCSFramework.IFStrategy.dll
+C:\YSLCRM\YSLEMMP.root\Model\Model.EBM\obj\Debug\ResolveAssemblyReference.cache
+C:\YSLCRM\YSLEMMP.root\Model\Model.EBM\obj\Debug\MCSFramework.Model.EBM.dll
+C:\YSLCRM\YSLEMMP.root\Model\Model.EBM\obj\Debug\MCSFramework.Model.EBM.pdb

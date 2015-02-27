@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA288C69-B64B-4F14-A3B1-79BE859585CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSFramework.BLL.FNA</RootNamespace>
+    <AssemblyName>MCSFramework.BLL.FNA</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCSFramework.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.BLL.Pub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.BLL.Pub.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.IFStrategy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model.FNA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.Model.FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model.Pub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.Model.Pub.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.SQLDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.SQLDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FNA_AmountReceivableBLL.cs" />
+    <Compile Include="FNA_AmountReceivableChangeHistoryBLL.cs" />
+    <Compile Include="FNA_BudgetBalanceBLL.cs" />
+    <Compile Include="FNA_BudgetBLL.cs" />
+    <Compile Include="FNA_BudgetChangeHistoryBLL.cs" />
+    <Compile Include="FNA_BudgetExtraApplyBLL.cs" />
+    <Compile Include="FNA_BudgetPercentFeeTypeBLL.cs" />
+    <Compile Include="FNA_BudgetSourceBLL.cs" />
+    <Compile Include="FNA_BudgetTransferApplyBLL.cs" />
+    <Compile Include="FNA_BudgetTransferBLL.cs" />
+    <Compile Include="FNA_ClientPaymentForcastBLL.cs" />
+    <Compile Include="FNA_ClientPaymentInfoBLL.cs" />
+    <Compile Include="FNA_EvectionRouteBLL.cs" />
+    <Compile Include="FNA_FeeApplyBLL.cs" />
+    <Compile Include="FNA_FeeWriteOffBLL.cs" />
+    <Compile Include="FNA_FeeWriteOffDetail_AdjustInfoBLL.cs" />
+    <Compile Include="FNA_StaffBonusBaseBLL.cs" />
+    <Compile Include="FNA_StaffBounsLevelBLL.cs" />
+    <Compile Include="FNA_StaffBounsLevelDetailBLL.cs" />
+    <Compile Include="FNA_StaffBounsScoreBLL.cs" />
+    <Compile Include="FNA_StaffSalaryBLL.cs" />
+    <Compile Include="FNA_StaffSalaryDataObjectBetaBLL.cs" />
+    <Compile Include="FNA_StaffSalaryDataObjectBLL.cs" />
+    <Compile Include="FNA_StaffSalary_ParamBLL.cs" />
+    <Compile Include="HR_SpecialApplyBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SQLDAL\SQLDAL.FNA\SQLDAL.FNA.csproj">
+      <Project>{D75E7D12-17DF-4125-9873-5E4F00AE9F02}</Project>
+      <Name>SQLDAL.FNA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

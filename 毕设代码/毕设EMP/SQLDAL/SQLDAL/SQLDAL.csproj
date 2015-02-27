@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EA523BE-4990-45EF-8A49-A335A1C30E9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSFramework.SQLDAL</RootNamespace>
+    <AssemblyName>MCSFramework.SQLDAL</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCSFramework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.DBUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.IFStrategy, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addr_OfficialCityDAL.cs" />
+    <Compile Include="Addr_OfficialCityInOrganizeCityDAL.cs" />
+    <Compile Include="Addr_OfficialCityPopulationDAL.cs" />
+    <Compile Include="Addr_OrganizeCityDAL.cs" />
+    <Compile Include="Addr_OrganizeCityParamDAL.cs" />
+    <Compile Include="Base\BaseComplexDAL.cs" />
+    <Compile Include="Base\BaseSimpleDAL.cs" />
+    <Compile Include="Const_IPLocationDAL.cs" />
+    <Compile Include="DB_IDMapTableDAL.cs" />
+    <Compile Include="Info_ChangeHistoryDAL.cs" />
+    <Compile Include="Org_Position_DAL.cs" />
+    <Compile Include="Org_Staff_DAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\TableColumnCollection.cs" />
+    <Compile Include="Dictionary_DAL.cs" />
+    <Compile Include="Right_ActionDAL.cs" />
+    <Compile Include="Right_Assign_DAL.cs" />
+    <Compile Include="Right_Module_DAL.cs" />
+    <Compile Include="Org_StaffNumberLimitDAL.cs" />
+    <Compile Include="TreeTableDAL.cs" />
+    <Compile Include="UD_DetailViewDAL.cs" />
+    <Compile Include="UD_ModelFieldsDAL.cs" />
+    <Compile Include="UD_PanelDAL.cs" />
+    <Compile Include="UD_Panel_ModelFieldsDAL.cs" />
+    <Compile Include="UD_Panel_TableDAL.cs" />
+    <Compile Include="UD_Panel_TableRelationDAL.cs" />
+    <Compile Include="UD_TableListDAL.cs" />
+    <Compile Include="UD_WebPageControlDAL.cs" />
+    <Compile Include="UD_WebPageDAL.cs" />
+    <Compile Include="UserDAL.cs" />
+    <Compile Include="User_RegisterMACDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Model\Model\Model.csproj">
+      <Project>{C51E7F10-074C-48C0-B1AC-BA22A72B6FA2}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,89 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using MCSFramework.BLL;
+using MCSFramework.BLL.Pub;
+using MCSFramework.BLL.OPI;
+using System.Data;
+using MCSFramework.Common;
+
+public partial class SubModule_OA_TrackCard_Desktop_TrackCard : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            BindDropDown();
+
+            BindGrid();
+        }
+    }
+
+    private void BindDropDown()
+    {
+        #region 绑定用户可管辖的管理片区
+        Org_StaffBLL staff = new Org_StaffBLL((int)Session["UserID"]);
+        tr_OrganizeCity.DataSource = staff.GetStaffOrganizeCity();
+
+        if (tr_OrganizeCity.DataSource.Select("ID = 1").Length > 0)
+        {
+            tr_OrganizeCity.RootValue = "0";
+            tr_OrganizeCity.SelectValue = "1";
+        }
+        else
+        {
+            tr_OrganizeCity.RootValue = new Addr_OrganizeCityBLL(staff.Model.OrganizeCity).Model.SuperID.ToString();
+            tr_OrganizeCity.SelectValue = staff.Model.OrganizeCity.ToString();
+        }
+        #endregion
+
+        ddl_AccountMonth.DataSource = AC_AccountMonthBLL.GetModelList("BeginDate <= GETDATE()");
+        ddl_AccountMonth.DataBind();
+        ddl_AccountMonth.SelectedValue = AC_AccountMonthBLL.GetCurrentMonth().ToString();
+    }
+
+    private void BindGrid()
+    {
+        int organizecity = int.Parse(tr_OrganizeCity.SelectValue);
+        int month = int.Parse(ddl_AccountMonth.SelectedValue);
+
+        DataTable dt = OPI_TrackCardBLL.GetOverview(organizecity, month);
+
+        gv_TrackCardList.DataSource = dt;
+        gv_TrackCardList.DataBind();
+        MatrixTable.GridViewMatric(gv_TrackCardList);
+
+        chart1.Series["Data01"].Points.DataBind(dt.Rows, "CityName", "Data01_P", "");
+        chart1.Series["Data02"].Points.DataBind(dt.Rows, "CityName", "Data02_P", "");
+        chart1.Series["Data03"].Points.DataBind(dt.Rows, "CityName", "Data03_P", "");
+        chart1.Series["Data04"].Points.DataBind(dt.Rows, "CityName", "Data04_P", "");
+
+        #region 求出最大百分比
+        decimal max = 100;
+        for (int i = 0; i < dt.Rows.Count; i++)
+        {
+            if (max < (decimal)dt.Rows[i]["Data01_P"]) max = (decimal)dt.Rows[i]["Data01_P"];
+            if (max < (decimal)dt.Rows[i]["Data02_P"]) max = (decimal)dt.Rows[i]["Data02_P"];
+            if (max < (decimal)dt.Rows[i]["Data03_P"]) max = (decimal)dt.Rows[i]["Data03_P"];
+            if (max < (decimal)dt.Rows[i]["Data04_P"]) max = (decimal)dt.Rows[i]["Data04_P"];
+        }
+        #endregion
+        chart1.ChartAreas[0].AxisY.Maximum = (double)max;
+    }
+
+    protected void bt_Load_Click(object sender, EventArgs e)
+    {
+        BindGrid();
+    }
+    protected void gv_TrackCardList_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
+    {
+        int cityid = (int)gv_TrackCardList.DataKeys[e.NewSelectedIndex][0];
+        tr_OrganizeCity.SelectValue = cityid.ToString();
+        e.Cancel = true;
+        BindGrid();
+
+    }
+}

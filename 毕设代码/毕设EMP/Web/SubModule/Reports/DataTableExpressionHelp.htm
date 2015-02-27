@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            font-weight: bold;
+            color: #FF0000;
+        }
+        .style2
+        {
+            font-weight: bold;
+        }
+        .style3
+        {
+            width: 53px;
+        }
+        .style4
+        {
+            height: 18px;
+        }
+    </style>
+</head>
+<body style="font-size: 12px">
+    <div id="remarksSection" class="section" name="collapseableSection">
+        <h3 class="subHeading">
+            帮助说明</h3>
+        <p>
+            计算列表达式使用类似于Excel计算列表达式的Visual Basic语法。如：UnitPrice * 0.086、Count(OrderID)</p>
+        <h3 class="subHeading">
+            表达式语法</h3>
+        <div class="subsection">
+            <p>
+                在创建表达式时，使用 <span class="style1">字段名称</span> 属性来引用列。例如，如果一个列的 <span class="style1">字段名称</span>
+                是“UnitPrice”，而另一个是“Quantity”，则表达式将是： UnitPrice * Quantity</p>
+            <p>
+                在表达式中还支持下列算术运算符：
+            </p>
+            <p>
+                +（加） -（减） *（乘） /（除） %（模数）
+            </p>
+            <p>
+                若要连接字符串，请使用 + 字符。</p>
+            <p>
+                <b>聚合 </b>
+            </p>
+            <p>
+                支持下列聚合类型：
+            </p>
+            <p>
+                Sum（求和） Avg（平均） Min（最小值） Max（最大值） Count（计数） StDev（统计标准偏差） Var（统计方差）。</p>
+            <p>
+                例如，若要为名为“Price”的列中的数字创建汇总，就用：Sum(Price)
+            </p>
+            <p>
+                注意：如果使用一个表来创建聚合，将没有组合功能，所有行都在列中显示相同的值。</p>
+            <p class="style1">
+                支持以下函数</p>
+            <p class="style2">
+                CONVERT</p>
+            <div class="tableSection">
+                <table cellpadding="1" cellspacing="1" border="0">
+                    <tr>
+                        <td class="style3">
+                            <p>
+                                说明
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                将特定表达式转换为指定的 .NET Framework 类型。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            <p>
+                                语法
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Convert(<span class="parameter">expression</span>, <span class="parameter">type</span>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            <p>
+                                参数
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="parameter">expression</span> — 要转换的表达式。</p>
+                            <p>
+                                <span class="parameter">type</span> — 值将转换成的 .NET Framework 类型。</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                例如：myDataColumn.例如：Convert(total, &#39;System.Int32&#39;)</p>
+            <p>
+                所有转换都是有效的，只有下列情况例外：Boolean</span> 只能与 <span class="keyword">Byte</span>、<span
+                    class="keyword">SByte</span>、<span class="keyword">Int16</span>、<span class="keyword">Int32</span>、<span
+                        class="keyword">Int64</span>、<span class="keyword">UInt16</span>、<span class="keyword">UInt32</span>、<span
+                            class="keyword">UInt64</span>、<span class="keyword">String</span> 和它本身相互转换。<span
+                                class="keyword">Char</span> 只能与 <span class="keyword">Int32</span>、<span class="keyword">UInt32</span>、<span
+                                    class="keyword">String</span> 和它本身相互转换。<span class="keyword">DateTime</span>
+                只能与 <span class="keyword">String</span> 和它本身相互转换。<span class="keyword">TimeSpan</span>
+                只能与 <span class="keyword">String</span> 和它本身相互转换。</p>
+            <p class="style2">
+                LEN</p>
+            <div class="tableSection">
+                <table cellpadding="1" cellspacing="1" border="0">
+                    <tr>
+                        <td class="style3">
+                            <p>
+                                说明
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                获取字符串的长度
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            <p>
+                                语法
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                LEN(<span class="parameter">expression</span>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style3">
+                            <p>
+                                参数
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="parameter">expression</span> — 要计算的字符串。</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                例如：myDataColumn.例如：Len(ItemName)</p>
+            <p>
+                <span class="keyword"><b>ISNULL </b>
+                    <div class="tableSection">
+                        <table cellpadding="1" cellspacing="1" border="0">
+                            <tr>
+                                <td>
+                                    <p>
+                                        说明
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        检查表达式并返回已检查的表达式或返回替换值。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="55">
+                                    <p>
+                                        语法
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        ISNULL(<span class="parameter">expression</span>, <span class="parameter">replacementvalue</span>)
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        参数
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <span class="parameter">expression</span> — 要检查的表达式。</p>
+                                    <p>
+                                        <span class="parameter">replacementvalue</span> — 如果表达式为 <span class="keyword"><span
+                                            class="languageSpecificText"><span class="cs">null</span><span class="vb">Nothing</span><span
+                                                class="cpp">nullptr</span></span></span><span class="languageSpecificText"><span
+                                                    class="nu">null 引用（在 Visual Basic 中为 <span class="keyword">Nothing</span>）</span></span>，则返回
+                                        <span class="parameter">replacementvalue</span>。</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <p>
+                    例如：myDataColumn.例如：IsNull(price, -1)</p>
+            <p>
+                <span class="keyword"><b>IIF </b>
+                    <div class="tableSection">
+                        <table cellpadding="1" cellspacing="1" border="0">
+                            <tr>
+                                <td>
+                                    <p>
+                                        说明
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        根据逻辑表达式的结果，获取两个值之一。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="55">
+                                    <p>
+                                        语法
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        IIF(<span class="parameter">expr</span>, <span class="parameter">truepart</span>,
+                                        <span class="parameter">falsepart</span>)
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        参数
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <span class="parameter">expr</span> — 要计算的表达式。</p>
+                                    <p>
+                                        <span class="parameter">truepart</span> — 表达式为真时返回的值。</p>
+                                    <p>
+                                        <span class="parameter">falsepart</span> — 表达式为假时返回的值。</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <p>
+                    例如：myDataColumn.例如：IIF(total&gt;1000, &#39;expensive&#39;, &#39;dear&#39;)
+                </p>
+            <p>
+                <span class="keyword"><b>TRIM </b>
+                    <div class="tableSection">
+                        <table cellpadding="1" cellspacing="1" border="0">
+                            <tr>
+                                <td width="55">
+                                    <p>
+                                        说明
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        移除所有前导的和后缀的空格字符，如 \r、\n、\t、&#39; &#39;
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        语法
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        TRIM(<span class="parameter">expression</span>)
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        参数
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <span class="parameter">expression</span> — 要剪裁的表达式。</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                <p class="style2">
+                    SUBSTRING</p>
+            <div class="tableSection">
+                <table cellpadding="1" cellspacing="1" border="0">
+                    <tr>
+                        <td width="55">
+                            <p>
+                                说明
+                            </p>
+                        </td>
+                        <td class="style4">
+                            <p>
+                                获取从字符串中的指定点开始，具有指定长度的子字符串。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                语法
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                SUBSTRING(<span class="parameter">expression</span>,<span class="parameter"> start</span>,<span
+                                    class="parameter"> length</span>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                参数
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="parameter">expression</span> — 子字符串的源字符串。</p>
+                            <p>
+                                <span class="parameter">start</span> — 指定子字符串开始位置的整数。</p>
+                            <p>
+                                <span class="parameter">length</span> — 指定子字符串长度的整数。</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                例如：SUBSTRING(phone, 7, 8)</p>
+        </div>
+        <mshelp:ktable keywords="tt_P:System.Data.DataColumn.Expression" xmlns:mshelp="http://msdn.microsoft.com/mshelp"
+            indexmoniker="!DefaultDynamicLinkIndex" disambiguator="table" topicheader="Topic"
+            locheader="Location">
+        </mshelp:ktable>
+    </div>
+</body>
+</html>

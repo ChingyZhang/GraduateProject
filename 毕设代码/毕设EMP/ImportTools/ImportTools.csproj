@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76EAD390-0240-47E4-A18E-96E2DB6D9177}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImportTools</RootNamespace>
+    <AssemblyName>ImportTools</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ManifestCertificateThumbprint>93B69A6CBE86EB119278959A430D932FB0FDE5A3</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ImportTools_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\PrecompiledWeb\GiftApplyAmountImport\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://emp.yashili.com/GiftApplyAmountImport/</InstallUrl>
+    <SupportUrl>http://www.meichis.com</SupportUrl>
+    <ProductName>GiftApplyAmountImport</ProductName>
+    <PublisherName>meichis</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.html</WebPage>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCSFramework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Bin\MCSFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.DBUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Bin\MCSFramework.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.IFStrategy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import_GiftApplyAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import_GiftApplyAmount.designer.cs">
+      <DependentUpon>Import_GiftApplyAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import_GiftApplyFeeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import_GiftApplyFeeRate.Designer.cs">
+      <DependentUpon>Import_GiftApplyFeeRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import_GiftApplyAmount.resx">
+      <DependentUpon>Import_GiftApplyAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import_GiftApplyFeeRate.resx">
+      <DependentUpon>Import_GiftApplyFeeRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ImportTools_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.Logistics\BLL.Logistics.csproj">
+      <Project>{21D92F20-70CC-4B46-9664-AAD0D45A88EB}</Project>
+      <Name>BLL.Logistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL\BLL.csproj">
+      <Project>{F5F19EAB-C643-4EAD-A734-6853D31015A5}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.Logistics\Model.Logistics.csproj">
+      <Project>{A88EE9D4-F4F7-4ABE-9B8A-BA0E845A1BE8}</Project>
+      <Name>Model.Logistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.CM\SQLDAL.CM.csproj">
+      <Project>{945C3B89-FBBF-4369-92EF-C3231410EBAD}</Project>
+      <Name>SQLDAL.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.Promotor\SQLDAL.Promotor.csproj">
+      <Project>{8F49F659-ADF9-424F-A8DA-5D49C43FA631}</Project>
+      <Name>SQLDAL.Promotor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.Pub\SQLDAL.Pub.csproj">
+      <Project>{47E0D9D5-BB49-420C-A2AA-EB0B36C25F24}</Project>
+      <Name>SQLDAL.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL\SQLDAL.csproj">
+      <Project>{0EA523BE-4990-45EF-8A49-A335A1C30E9A}</Project>
+      <Name>SQLDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.CM\BLL.CM.csproj">
+      <Project>{D2F82FC7-DA66-4673-A2DA-D159C1818D0B}</Project>
+      <Name>BLL.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.Promotor\BLL.Promotor.csproj">
+      <Project>{805E86BC-26DB-462F-BAAC-AFC5EC5A7349}</Project>
+      <Name>BLL.Promotor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.Pub\BLL.Pub.csproj">
+      <Project>{4B38359B-42C5-4ADD-AA2B-BFF873B929DF}</Project>
+      <Name>BLL.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.CM\Model.CM.csproj">
+      <Project>{1AFB8B31-BFAC-4D7B-8AE1-1D69D4010667}</Project>
+      <Name>Model.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.Promotor\Model.Promotor.csproj">
+      <Project>{FBAC96A5-AB93-440D-AC36-DA481708AD56}</Project>
+      <Name>Model.Promotor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.Pub\Model.Pub.csproj">
+      <Project>{9258AC7D-2AE4-422B-9CBB-3801839C81FB}</Project>
+      <Name>Model.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model\Model.csproj">
+      <Project>{C51E7F10-074C-48C0-B1AC-BA22A72B6FA2}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

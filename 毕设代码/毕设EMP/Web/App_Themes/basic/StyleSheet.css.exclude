@@ -1,0 +1,105 @@
+﻿body 
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+}
+
+td
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+}
+
+pre
+{
+	font-family: Monospace;
+	font-size: 10pt;
+	background-color: #EFEFEF;
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+}
+
+code
+{
+	color: Maroon;
+}
+
+li
+{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.masterTable
+{
+	width: 780px;
+}
+
+.masterHeader
+{
+	background-color: #E3EAEB;
+	font-size: 14pt;
+	font-weight: bold;
+	border-top: 1px solid #C5CBCC;
+	border-left: 1px solid #C5CBCC;
+	border-right: 1px solid #C5CBCC;
+}
+
+.masterMenu
+{
+	background-color: #E3EAEB;
+	color: #666666;
+	width: 160px;
+	border-left: 1px solid #C5CBCC;
+	border-right: 1px solid #C5CBCC;
+	border-bottom: 1px solid #C5CBCC;
+}
+
+.masterContent
+{
+	padding: 10px;
+	border-top: 1px solid #C5CBCC;
+}
+
+.definitionTable
+{
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #CCCCCC;
+	background-color: #EFEFEF;
+}
+
+.definitionTerm
+{
+	color: Maroon;
+	font-family: Arial;
+	font-size: 9pt;
+	padding-bottom: 10px;
+	padding-top: 2px;
+	padding-left: 4px;
+}
+
+.definitionDesc
+{
+	font-size: 9pt;
+	font-family: Arial;
+	padding-bottom: 10px;
+	padding-top: 2px;
+	padding-left: 4px;
+}
+
+.topBorder
+{
+	border-top: 1px solid black;
+}
+
+.bottomGrayBorder
+{
+	border-bottom: 2px solid #999999;
+}
+
+.rightGrayBorder
+{
+	border-right: 2px solid #999999;
+}

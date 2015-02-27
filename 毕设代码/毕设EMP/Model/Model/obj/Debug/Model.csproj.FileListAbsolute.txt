@@ -1,0 +1,15 @@
+C:\YSLCRM\YSLEMMP.root\Model\Model\bin\Debug\MCSFramework.Model.dll
+C:\YSLCRM\YSLEMMP.root\Model\Model\bin\Debug\MCSFramework.Model.pdb
+C:\YSLCRM\YSLEMMP.root\Model\Model\bin\Debug\MCSFramework.Common.dll
+C:\YSLCRM\YSLEMMP.root\Model\Model\obj\Debug\ResolveAssemblyReference.cache
+C:\YSLCRM\YSLEMMP.root\Model\Model\obj\Debug\MCSFramework.Model.dll
+C:\YSLCRM\YSLEMMP.root\Model\Model\obj\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设EMP\Model\Model\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设EMP\Model\Model\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设EMP\Model\Model\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设EMP\Model\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\毕设\毕设EMP\Model\Model\obj\Debug\MCSFramework.Model.dll
+E:\毕设\毕设EMP\Model\Model\obj\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设EMP\Model\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\毕设\毕设代码\毕设EMP\Model\Model\obj\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设EMP\Model\Model\obj\Debug\MCSFramework.Model.pdb

@@ -1,0 +1,238 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage_BasicMasterPage, App_Web_2anp15e9" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server" webpagesubcode="">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>营销管理系统</title>
+    <base target="_self" />
+    
+    <script language="javascript">
+        //获取时间		
+        function Timer(span) {
+            var tmp = new Date();
+            var seconds, minutes, hours, date;
+            if (tmp.getSeconds() < 10)
+                seconds = "0" + tmp.getSeconds();
+            else
+                seconds = tmp.getSeconds();
+            if (tmp.getMinutes() < 10)
+                minutes = "0" + tmp.getMinutes();
+            else
+                minutes = tmp.getMinutes();
+            if (tmp.getHours() < 10)
+                hours = "0" + tmp.getHours();
+            else
+                hours = tmp.getHours();
+                
+            if (document.getElementById('ctl00_lbl_now')!=null)
+                document.getElementById('ctl00_lbl_now').innerText = tmp.getFullYear() + "年" + (tmp.getMonth() + 1) + "月" + tmp.getDate() + "日 " + hours + ":" + minutes + ":" + seconds;
+        }
+
+        //得到服务器时间每隔updatespan分钟校验一次，每秒更新一次本地时钟
+        function GetServerTime() {
+            var clientspan = 1 * 1000;
+            //更新本地时钟
+            setInterval("Timer(" + clientspan + ")", clientspan);
+        }
+
+        function doPrint() {
+            bdhtml = window.document.body.innerHTML;
+            sprnstr = "<!--startprint-->";
+            eprnstr = "<!--endprint-->";
+            prnhtml = bdhtml.substr(bdhtml.lastIndexOf(sprnstr) + 17);
+            prnhtml = prnhtml.substring(0, prnhtml.indexOf(eprnstr));
+            window.document.body.innerHTML = prnhtml;
+            window.print();
+            history.go(0);
+        }       
+    </script>
+
+</head>
+<body id="body1" onload="LeftCol_OnLoad('leftCol');GetServerTime();">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnableHistory="True">
+    </asp:ScriptManager>
+    <div style="display: none; position: absolute; top: 65px; left: 18px; filter: alpha(opacity=88);"
+        id="leftCol">
+        <table cellpadding="0" cellspacing="0" border="0" width="160">
+            <tr>
+                <td height="800px" valign="top">
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <div style="border: 3px; border-color: Blue; height:600px" >
+                                <iframe id="fr_leftmenu" runat="server" src="" scrolling="auto" width="160" height="100%"
+                                    frameborder="0" noresize="resize"></iframe>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 100%">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr id="tr_Head" runat="server">
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" class="menu4">
+                    <tr>
+                        <td class="logo" rowspan="2" valign="top" width="200px" align="center">
+                            <asp:Image ID="Image1" runat="server" Height="42px" ImageUrl="~/App_Themes/basic/images/company_logo.png" />
+                        </td>
+                        <td class="ipbl">
+                        </td>
+                        <td nowrap class="welcome" align="center" width="230px">
+                            <asp:Image ID="Image4" runat="server" ImageUrl="~/App_Themes/basic/images/ulstart.gif"
+                                Width="12" Height="16" /><asp:LoginName ID="LoginName1" runat="server" FormatString="欢迎您:({0})" />
+                            <asp:Label ID="lb_UserName" runat="server" Text=""></asp:Label>
+                        </td>
+                        <td class="welcome" nowrap="nowrap">
+                            <asp:HyperLink ID="HyperLink3" NavigateUrl="~/SubModule/OA/Mail/index.aspx" runat="server"
+                                ForeColor="White">
+                                <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/mailClose.gif" Width="18" /></asp:HyperLink>&nbsp;<b><font
+                                    color="red"><asp:Label ID="lb_NewMailCount" runat="server"></asp:Label></font></b>封新邮件
+                        </td>
+                        <td class="welcome" nowrap="nowrap">
+                            <iframe id="fr_onlineuser" runat="server" src="" scrolling="no" width="100" height="100%"
+                                frameborder="no" noresize="noresize"></iframe>
+                        </td>
+                        <td class="welcome" width="250px" nowrap="nowrap">
+                            <ul class="subTabs">
+                                <li>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SubModule/desktop.aspx">我的桌面</asp:HyperLink></li><li>
+                                        <asp:LinkButton OnClientClick='javascript:return confirm("是否确定要开始上班吗？")' ID="bt_On"
+                                            runat="server" OnClick="bt_On_Click" Visible="false">上  班</asp:LinkButton></li><li>
+                                                <asp:LinkButton OnClientClick='javascript:return confirm("是否确定要下班吗？")' ID="bt_Out"
+                                                    runat="server" OnClick="bt_Out_Click">下  班</asp:LinkButton></li><li>
+                                                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SubModule/Login/ChangePassword.aspx">修改密码</asp:HyperLink></li><li>
+                                                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/SubModule/desktop.aspx"
+                                                                Visible="false">帮助</asp:HyperLink></li><li>
+                                                                    <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutText="注  销" LoginText="登  录"
+                                                                        OnLoggedOut="LoginStatus1_LoggedOut" />
+                                                                </li>
+                                <li>
+                                    <asp:HyperLink ID="hy_OpenSoftPhone" runat="server" NavigateUrl="/SoftPhone/HWSoftPhone.application"
+                                        Visible="false">软电话</asp:HyperLink></li><li>
+                                            <asp:LinkButton ID="bt_Print" runat="server" OnClientClick="doPrint()">打印</asp:LinkButton></li>
+                            </ul>
+                        </td>
+                        <td width="20px" class="welcome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" colspan="3">
+                            <asp:UpdateProgress ID="UpdateProgress2" runat="server" DisplayAfter="0">
+                                <ProgressTemplate>
+                                    <asp:Image ID="Image10" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                                    <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                                    <asp:Image ID="Image7" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                                    <span style="color: White">页面加载中,请耐心稍候...</span>
+                                </ProgressTemplate>
+                            </asp:UpdateProgress>
+                        </td>
+                        <td colspan="3" align="right" valign="middle" nowrap="nowrap" style="padding: 10px 10px 0px 10px;">
+                            <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                    <table border="0" cellpadding="0" cellspacing="0" height="23">
+                                        <tr>
+                                            <td align="right">
+                                                <asp:Label ID="lbl_now" runat="server" ForeColor="white"></asp:Label>&nbsp;
+                                            </td>
+                                            <td align="right" width="130px">
+                                                <span style="color: White">
+                                                    <input type="text" style="width: 80px" id="tbx_KBSearch" name="tbx_KBSearch" onkeypress="if(event.keyCode==13) searchkb();" /></span>
+                                            </td>
+                                            <td>
+                                                <asp:Image ID="bt_KBSearch" runat="server" ImageUrl="~/Images/gif/gif-0412.gif" ToolTip="搜索知识库"
+                                                    OnClick="javascript:searchkb();" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr id="tr_Menu" runat="server">
+            <td style="padding-right: 0px; padding-left: 0px; vertical-align: top; width: 100%">
+            </td>
+        </tr>
+        <tr id="tr_Body" runat="server" height="400px">
+            <td style="padding-right: 8px; padding-left: 8px; vertical-align: top; width: 100%">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+                    <tr>
+                        <td valign="top" height="100%">
+                            <table cellpadding="0" cellspacing="0" border="0" height="100%" class="leftColumnModuleHead">
+                                <tr>
+                                    <td valign="top" width="8px" id="td_image" height="100%" height="100%">
+                                        <asp:Image runat="server" ID="HideHandle" ImageUrl="~/App_Themes/basic/images/show.png"
+                                            Style="cursor: pointer; cursor: hand;" ToolTip="菜单在这里" onclick='showLeft_Click("leftCol");' />
+                                    </td>
+                                    <td id="td_left" valign="top" rowspan="2">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="padding-right: 8px; vertical-align: top; width: 100%">
+                            <!--startprint-->
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <!--endprint-->
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="0">
+                    <ProgressTemplate>
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                        请稍候...
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+            </td>
+        </tr>
+        <tr id="tr_Bottom" runat="server">
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" class="underFooter" width="100%">
+                    <tr>
+                        <td align="center" class="copyRight" style="height: 38px">
+                            服务器响应时间:
+                            <asp:Label ID="lbPageResponseTime" runat="server" Text="80"></asp:Label>
+                            毫秒.<br />
+                            @ 2004-2013 <a class="copyRightLink" href="http://www.meichis.com" style="color: #990033">
+                                南京美驰资讯科技开发有限公司 </a>版权所有.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+
+    <script language="javascript">
+        //模式窗口时，隐藏页面框架部分
+        if (window.dialogArguments != null) {
+            if (window.document.URL.indexOf("ViewFramework") < 0) {
+                if (document.getElementById("ctl00_tr_Head") != null) {
+                    document.getElementById("ctl00_tr_Head").style.display = "none";
+                    document.getElementById("ctl00_tr_Menu").style.display = "none";
+                    document.getElementById("ctl00_tr_Bottom").style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

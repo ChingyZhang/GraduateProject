@@ -1,0 +1,5 @@
+E:\毕设\毕设EMP\OfflineImportExcelSVM\bin\Debug\OfflineImportExcelSVM.exe.config
+E:\毕设\毕设EMP\OfflineImportExcelSVM\obj\Debug\ResolveAssemblyReference.cache
+E:\毕设\毕设EMP\OfflineImportExcelSVM\obj\Debug\OfflineImportExcelSVM.Form1.resources
+E:\毕设\毕设EMP\OfflineImportExcelSVM\obj\Debug\OfflineImportExcelSVM.Properties.Resources.resources
+E:\毕设\毕设EMP\OfflineImportExcelSVM\obj\Debug\OfflineImportExcelSVM.csproj.GenerateResource.Cache

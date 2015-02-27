@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportExcelSVM", "ImportExcel\ImportExcelSVM.csproj", "{021B7C02-25CB-4A7E-97A7-BA458C2B25A0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://mcssrv80:8080/tfs/tfs2008
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ImportExcel\\ImportExcelSVM.csproj
+		SccProjectName1 = ImportExcel
+		SccLocalPath1 = ImportExcel
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{021B7C02-25CB-4A7E-97A7-BA458C2B25A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021B7C02-25CB-4A7E-97A7-BA458C2B25A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021B7C02-25CB-4A7E-97A7-BA458C2B25A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021B7C02-25CB-4A7E-97A7-BA458C2B25A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

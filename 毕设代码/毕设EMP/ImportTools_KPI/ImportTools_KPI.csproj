@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30FB4E54-3A40-4481-AE3B-54714CF63B05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImportTools_KPI</RootNamespace>
+    <AssemblyName>ImportTools_KPI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>9B659D98341739114A5EEF2B85BD5FDFDB9EC171</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ImportTools_KPI_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <StartupObject>ImportTools_KPI.Program</StartupObject>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <PublishUrl>C:\Users\jince\Desktop\pub\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCSFramework.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.BLL.CM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.BLL.CM.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.BLL.FNA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.BLL.FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.BLL.OA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.BLL.OA.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.BLL.Pub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.BLL.Pub.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.BLL.SVM, Version=1.2014.5.25, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.BLL.SVM.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Common, Version=1.13.11.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.DBUtility, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.IFStrategy, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model.CM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Model.CM.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model.FNA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Model.FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model.OA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Model.OA.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model.Pub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Model.Pub.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model.SVM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Model.SVM.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.SQLDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.SQLDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.SQLDAL.CM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.SQLDAL.CM.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.SQLDAL.FNA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.SQLDAL.FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.SQLDAL.OA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.SQLDAL.OA.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.SQLDAL.Pub, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.SQLDAL.Pub.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.SQLDAL.SVM, Version=1.2014.5.25, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.SQLDAL.SVM.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DownFeeRateTargetTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownFeeRateTargetTemp.Designer.cs">
+      <DependentUpon>DownFeeRateTargetTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownOrganizeCityTargetTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownOrganizeCityTargetTemp.Designer.cs">
+      <DependentUpon>DownOrganizeCityTargetTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownQuarterFeeRateTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownQuarterFeeRateTemp.Designer.cs">
+      <DependentUpon>DownQuarterFeeRateTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportFeeRateTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportFeeRateTarget.Designer.cs">
+      <DependentUpon>ImportFeeRateTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportKeyTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportKeyTarget.Designer.cs">
+      <DependentUpon>ImportKeyTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportQuarterFeeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportQuarterFeeRate.Designer.cs">
+      <DependentUpon>ImportQuarterFeeRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DownFeeRateTargetTemp.resx">
+      <DependentUpon>DownFeeRateTargetTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownOrganizeCityTargetTemp.resx">
+      <DependentUpon>DownOrganizeCityTargetTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownQuarterFeeRateTemp.resx">
+      <DependentUpon>DownQuarterFeeRateTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportFeeRateTarget.resx">
+      <DependentUpon>ImportFeeRateTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportKeyTarget.resx">
+      <DependentUpon>ImportKeyTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportQuarterFeeRate.resx">
+      <DependentUpon>ImportQuarterFeeRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="ImportTools_KPI_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\MCSFramework.BLL.CM.dll" />
+    <Content Include="bin\MCSFramework.BLL.dll" />
+    <Content Include="bin\MCSFramework.BLL.FNA.dll" />
+    <Content Include="bin\MCSFramework.BLL.OA.dll" />
+    <Content Include="bin\MCSFramework.BLL.Pub.dll" />
+    <Content Include="bin\MCSFramework.BLL.SVM.dll" />
+    <Content Include="bin\MCSFramework.Common.dll" />
+    <Content Include="bin\MCSFramework.DBUtility.dll" />
+    <Content Include="bin\MCSFramework.IFStrategy.dll" />
+    <Content Include="bin\MCSFramework.Model.CM.dll" />
+    <Content Include="bin\MCSFramework.Model.dll" />
+    <Content Include="bin\MCSFramework.Model.FNA.dll" />
+    <Content Include="bin\MCSFramework.Model.OA.dll" />
+    <Content Include="bin\MCSFramework.Model.Pub.dll" />
+    <Content Include="bin\MCSFramework.Model.SVM.dll" />
+    <Content Include="bin\MCSFramework.SQLDAL.CM.dll" />
+    <Content Include="bin\MCSFramework.SQLDAL.dll" />
+    <Content Include="bin\MCSFramework.SQLDAL.FNA.dll" />
+    <Content Include="bin\MCSFramework.SQLDAL.OA.dll" />
+    <Content Include="bin\MCSFramework.SQLDAL.Pub.dll" />
+    <Content Include="bin\MCSFramework.SQLDAL.SVM.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\NPOI.dll" />
+    <Content Include="bin\office.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

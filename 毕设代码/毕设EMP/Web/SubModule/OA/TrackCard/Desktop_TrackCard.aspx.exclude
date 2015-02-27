@@ -1,0 +1,149 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/BasicMasterPage.master"
+    AutoEventWireup="true" CodeFile="Desktop_TrackCard.aspx.cs" Inherits="SubModule_OA_TrackCard_Desktop_TrackCard" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="240px">
+                            <mcs:MCSTabControl ID="MCSTabControl1" runat="server" Width="100%" SelectedIndex="2">
+                                <Items>
+                                    <mcs:MCSTabItem Text="默认桌面" NavigateURL="../../desktop.aspx" />
+                                    <mcs:MCSTabItem Text="运营指标" NavigateURL="../../desktop_opi.aspx" Visible="false" />
+                                    <mcs:MCSTabItem Text="日跟踪表进度" Enable="false" />
+                                </Items>
+                            </mcs:MCSTabControl>
+                        </td>
+                        <td>
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="border-bottom-style: solid;
+                                border-bottom-color: #999999; border-bottom-width: 1px">
+                                <tr>
+                                    <td width="100px">
+                                        &nbsp;
+                                    </td>
+                                    <td width="70px" class="dataLabel">
+                                        管理片区
+                                    </td>
+                                    <td width="220px" class="dataField">
+                                        <mcs:MCSTreeControl ID="tr_OrganizeCity" runat="server" IDColumnName="ID" NameColumnName="Name"
+                                            ParentColumnName="SuperID" Width="180px" AutoPostBack="False" />
+                                    </td>
+                                    <td width="70px" class="dataLabel">
+                                        会计月
+                                    </td>
+                                    <td class="dataField" width="100">
+                                        <asp:DropDownList ID="ddl_AccountMonth" runat="server" DataTextField="Name" DataValueField="ID">
+                                        </asp:DropDownList>
+                                    </td>
+                                    <td class="dataField">
+                                        <asp:Button ID="bt_Load" runat="server" OnClick="bt_Load_Click" Text="查看" Width="60px" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="tabForm">
+            <td>
+                <table cellspacing="5" cellpadding="5" width="100%" align="center" border="0">
+                    <tr>
+                        <td>
+                            <mcs:UC_GridView ID="gv_TrackCardList" runat="server" Width="100%" Binded="False"
+                                AutoGenerateColumns="False" BorderColor="Black" BorderWidth="1px" DataKeyNames="CityID"
+                                OnSelectedIndexChanging="gv_TrackCardList_SelectedIndexChanging" BorderStyle="Solid"
+                                ConditionString="" OrderFields="" PanelCode="" TotalRecordCount="0">
+                                <HeaderStyle CssClass="" BackColor="White" />
+                                <Columns>
+                                    <asp:CommandField ButtonType="Button" ShowSelectButton="True" SelectText="深入查看" ControlStyle-CssClass="button"
+                                        ItemStyle-Width="60px">
+                                        <ControlStyle CssClass="button"></ControlStyle>
+                                        <ItemStyle Width="60px"></ItemStyle>
+                                    </asp:CommandField>
+                                    <asp:BoundField DataField="CityName" HeaderText="管理片区" SortExpression="CityName" />
+                                    <asp:BoundField DataField="Data01_T" HeaderText="销量→任务" SortExpression="Data01_T" />
+                                    <asp:BoundField DataField="Data01" HeaderText="销量→实际" SortExpression="Data01" />
+                                    <asp:BoundField DataField="Data01_P" HeaderText="销量→达成率" SortExpression="Data01_P"
+                                        DataFormatString="{0:#.##}%">
+                                        <HeaderStyle ForeColor="Blue" />
+                                        <ItemStyle ForeColor="Red" />
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="Data02_T" HeaderText="档案数(自抢)→任务" SortExpression="Data02_T" />
+                                    <asp:BoundField DataField="Data02" HeaderText="档案数(自抢)→实际" SortExpression="Data02" />
+                                    <asp:BoundField DataField="Data02_P" HeaderText="档案数(自抢)→达成率" SortExpression="Data02_P"
+                                        DataFormatString="{0:#.##}%">
+                                        <HeaderStyle ForeColor="Blue" />
+                                        <ItemStyle ForeColor="Red" />
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="Data04_T" HeaderText="档案数(NE)→任务" SortExpression="Data04_T" />
+                                    <asp:BoundField DataField="Data04" HeaderText="档案数(NE)→实际" SortExpression="Data04" />
+                                    <asp:BoundField DataField="Data04_P" HeaderText="档案数(NE)→达成率" SortExpression="Data04_P"
+                                        DataFormatString="{0:#.##}%">
+                                        <HeaderStyle ForeColor="Blue" />
+                                        <ItemStyle ForeColor="Red" />
+                                    </asp:BoundField>
+                                    <asp:BoundField DataField="Data03_T" HeaderText="送货上门→任务" SortExpression="Data03_T" />
+                                    <asp:BoundField DataField="Data03" HeaderText="送货上门→实际" SortExpression="Data03" />
+                                    <asp:BoundField DataField="Data03_P" HeaderText="送货上门→达成率" SortExpression="Data03_P"
+                                        DataFormatString="{0:#.##}%">
+                                        <HeaderStyle ForeColor="Blue" />
+                                        <ItemStyle ForeColor="Red" />
+                                    </asp:BoundField>
+                                </Columns>
+                                <EmptyDataTemplate>
+                                    无数据
+                                </EmptyDataTemplate>
+                            </mcs:UC_GridView>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Chart ID="chart1" runat="server" EnableTheming="False" EnableViewState="True"
+                                Width="1000px" Height="500px">
+                                <Legends>
+                                    <asp:Legend Alignment="Center" Docking="Bottom" Name="Legend1">
+                                    </asp:Legend>
+                                </Legends>
+                                <ChartAreas>
+                                    <asp:ChartArea Name="ChartArea1">
+                                        <AxisY IsLabelAutoFit="False" Maximum="Auto">
+                                            <MajorGrid LineColor="Silver" LineDashStyle="Dot" />
+                                            <LabelStyle Font="Microsoft Sans Serif, 8pt" />
+                                        </AxisY>
+                                        <AxisX IsLabelAutoFit="False" IsMarginVisible="true">
+                                            <MajorGrid LineColor="Silver" LineDashStyle="Dot" />
+                                            <LabelStyle Font="Microsoft Sans Serif, 8pt" />
+                                        </AxisX>
+                                    </asp:ChartArea>
+                                </ChartAreas>
+                                <Series>
+                                    <asp:Series Name="Data01" ChartArea="ChartArea1" XValueMember="CityName" YValueMembers="Data01_P"
+                                        IsValueShownAsLabel="true" LegendText="销售达成率" XValueType="String" YValueType="Double"
+                                        LabelFormat="{0:0.##}%" CustomProperties="DrawingStyle=Cylinder">
+                                    </asp:Series>
+                                    <asp:Series Name="Data02" ChartArea="ChartArea1" XValueMember="CityName" YValueMembers="Data02_P"
+                                        IsValueShownAsLabel="true" LegendText="档案数(自抢)达成率" XValueType="String" YValueType="Double"
+                                        LabelFormat="{0:0.##}%" CustomProperties="DrawingStyle=Cylinder">
+                                    </asp:Series>
+                                    <asp:Series Name="Data04" ChartArea="ChartArea1" XValueMember="CityName" YValueMembers="Data04_P"
+                                        IsValueShownAsLabel="true" LegendText="档案数(NE)达成率" XValueType="String" YValueType="Double"
+                                        LabelFormat="{0:0.##}%" CustomProperties="DrawingStyle=Cylinder">
+                                    </asp:Series>
+                                    <asp:Series Name="Data03" ChartArea="ChartArea1" XValueMember="CityName" YValueMembers="Data03_P"
+                                        IsValueShownAsLabel="true" LegendText="送货上门数达成率" XValueType="String" YValueType="Double"
+                                        LabelFormat="{0:0.##}%" CustomProperties="DrawingStyle=Cylinder">
+                                    </asp:Series>
+                                </Series>
+                            </asp:Chart>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+</asp:Content>

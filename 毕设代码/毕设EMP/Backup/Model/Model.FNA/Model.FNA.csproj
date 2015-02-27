@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62EEE685-6480-4E23-ABC0-AD04271E7301}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSFramework.Model.FNA</RootNamespace>
+    <AssemblyName>MCSFramework.Model.FNA</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCSFramework.IFStrategy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FNA_AmountReceivable.cs" />
+    <Compile Include="FNA_AmountReceivableChangeHistory.cs" />
+    <Compile Include="FNA_Budget.cs" />
+    <Compile Include="FNA_BudgetBalance.cs" />
+    <Compile Include="FNA_BudgetChangeHistory.cs" />
+    <Compile Include="FNA_BudgetExtraApply.cs" />
+    <Compile Include="FNA_BudgetPercentFeeType.cs" />
+    <Compile Include="FNA_BudgetSource.cs" />
+    <Compile Include="FNA_BudgetTransfer.cs" />
+    <Compile Include="FNA_BudgetTransferApply.cs" />
+    <Compile Include="FNA_ClientPaymentForcast.cs" />
+    <Compile Include="FNA_ClientPaymentInfo.cs" />
+    <Compile Include="FNA_EvectionRoute.cs" />
+    <Compile Include="FNA_FeeApply.cs" />
+    <Compile Include="FNA_FeeApplyDetail.cs" />
+    <Compile Include="FNA_FeeApplyDetail_BrandRate.cs" />
+    <Compile Include="FNA_FeeWriteOff.cs" />
+    <Compile Include="FNA_FeeWriteOffDetail.cs" />
+    <Compile Include="FNA_FeeWriteOffDetail_AdjustInfo.cs" />
+    <Compile Include="FNA_StaffBonusBase.cs" />
+    <Compile Include="FNA_StaffBounsLevel.cs" />
+    <Compile Include="FNA_StaffBounsLevelDetail.cs" />
+    <Compile Include="FNA_StaffBounsScore.cs" />
+    <Compile Include="FNA_StaffBounsScore_Detail.cs" />
+    <Compile Include="FNA_StaffSalary.cs" />
+    <Compile Include="FNA_StaffSalaryDataObject.cs" />
+    <Compile Include="FNA_StaffSalaryDataObjectBeta.cs" />
+    <Compile Include="FNA_StaffSalaryDetail.cs" />
+    <Compile Include="FNA_StaffSalary_Param.cs" />
+    <Compile Include="HR_SpecialApply.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

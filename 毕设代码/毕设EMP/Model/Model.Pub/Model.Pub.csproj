@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9258AC7D-2AE4-422B-9CBB-3801839C81FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSFramework.Model.Pub</RootNamespace>
+    <AssemblyName>MCSFramework.Model.Pub</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCSFramework.IFStrategy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AC_AccountMonth.cs" />
+    <Compile Include="AC_AccountQuarter.cs" />
+    <Compile Include="AC_AccountTitle.cs" />
+    <Compile Include="AC_AccountTitleInFeeType.cs" />
+    <Compile Include="ADFind_FindCondition.cs" />
+    <Compile Include="ATMT_Attachment.cs" />
+    <Compile Include="MT_MaterialClassify.cs" />
+    <Compile Include="MT_Material.cs" />
+    <Compile Include="PDT_Brand.cs" />
+    <Compile Include="PDT_Classify.cs" />
+    <Compile Include="PDT_ClassifyGiftCostRate.cs" />
+    <Compile Include="PDT_Manufacturer.cs" />
+    <Compile Include="PDT_Packaging.cs" />
+    <Compile Include="PDT_Product.cs" />
+    <Compile Include="PDT_ProductCost.cs" />
+    <Compile Include="PDT_ProductInSeries.cs" />
+    <Compile Include="PDT_ProductPrice.cs" />
+    <Compile Include="PDT_ProductPrice_Detail.cs" />
+    <Compile Include="PDT_StandardPrice.cs" />
+    <Compile Include="PDT_StandardPrice_ApplyCity.cs" />
+    <Compile Include="PDT_StandardPrice_Detail.cs" />
+    <Compile Include="PDT_StandPriceChangeHistory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
