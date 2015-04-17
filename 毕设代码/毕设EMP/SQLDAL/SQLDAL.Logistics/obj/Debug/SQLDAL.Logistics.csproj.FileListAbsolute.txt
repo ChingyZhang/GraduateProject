@@ -35,3 +35,8 @@ E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\bin\Debug\MCSFramework.
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\obj\Debug\SQLDAL.Logistics.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\obj\Debug\MCSFramework.SQLDAL.Logistics.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\obj\Debug\MCSFramework.SQLDAL.Logistics.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\bin\Debug\MCSFramework.SQLDAL.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Logistics\bin\Debug\MCSFramework.Common.dll

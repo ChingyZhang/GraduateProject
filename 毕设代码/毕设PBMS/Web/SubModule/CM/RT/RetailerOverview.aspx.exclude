@@ -1,0 +1,181 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/BasicMasterPage.master" AutoEventWireup="true" CodeFile="RetailerOverview.aspx.cs" Inherits="SubModule_CM_RT_RetailerOverview" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+            <td>
+                <asp:UpdatePanel ID="UpdatePanel_Detail" runat="server" ChildrenAsTriggers="true"
+                    RenderMode="Inline">
+                    <ContentTemplate>
+                        <mcs:UC_DetailView ID="pl_detail" runat="server" DetailViewCode="DV_CM_RetailerDetail_Overview">
+                        </mcs:UC_DetailView>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" width="100%" height="28px" border="0" class="h3Row">
+                    <tr>
+                        <td width="200px">
+                            <h3>门店积分概况</h3>
+                        </td>
+                        <td align="left">
+                            <asp:Label ID="lb_PrimaryAccountName" ForeColor="Red" runat="server" Text=""></asp:Label></td>
+                       <%-- <td>起始日期
+                                        <asp:TextBox ID="tb_BeginTime" runat="server" Width="120px"></asp:TextBox>
+                        </td>
+                        <td>结束日期
+                                        <asp:TextBox ID="tb_EndTime" runat="server" Width="120px"></asp:TextBox>
+                        </td>
+                        <td align="right">
+                            <asp:Button ID="bt_PontsFind" runat="server" Text="查询" Width="60px" />
+                        </td>--%>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:UpdatePanel ID="UpdatePanel_ChangeDetail" runat="server" RenderMode="Inline"
+                    UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                            <tr>
+                                <td height="30" valign="bottom">
+                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                        <tr>
+                                            <td>
+                                                <mcs:MCSTabControl ID="MCSTabControl1" runat="server" Width="100%" SelectedIndex="0"
+                                                    OnOnTabClicked="MCSTabControl1_OnTabClicked">
+                                                    <Items>
+                                                        <mcs:MCSTabItem Text="变动概要" Value="0" />
+                                                        <mcs:MCSTabItem Text="变动明细" Value="1" />
+                                                    </Items>
+                                                </mcs:MCSTabControl>
+                                            </td>
+                                            <td align="right" width="160">查看月份:<asp:DropDownList ID="ddl_Month" runat="server" DataTextField="Name" DataValueField="ID"
+                                                AutoPostBack="True" OnSelectedIndexChanged="ddl_Month_SelectedIndexChanged">
+                                            </asp:DropDownList>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="tabForm">
+                                <td>
+                                    <mcs:UC_GridView ID="gv_ChangeByMonth" runat="server" Width="100%" OnDataBound="gv_ChangeByMonth_DataBound">
+                                        <Columns>
+                                        </Columns>
+                                        <EmptyDataTemplate>
+                                            无数据
+                                        </EmptyDataTemplate>
+                                    </mcs:UC_GridView>
+                                    <mcs:UC_GridView ID="gv_ChangeDetail" runat="server" Width="100%" AutoGenerateColumns="false"
+                                        PanelCode="Panel_RM_AccountChangeList_01" AllowPaging="true" AllowSorting="true">
+                                        <Columns>
+                                        </Columns>
+                                        <EmptyDataTemplate>
+                                            无数据
+                                        </EmptyDataTemplate>
+                                    </mcs:UC_GridView>
+                                </td>
+                            </tr>
+                        </table>
+                    </ContentTemplate>
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="MCSTabControl1" EventName="OnTabClicked" />
+                    </Triggers>
+                </asp:UpdatePanel>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" width="100%" height="28px" border="0" class="h3Row">
+                                <tr>
+                                    <td>
+                                        <h3>门店进销存概况</h3>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mcs:UC_GridView ID="gv_InventoryCounts" runat="server" AutoGenerateColumns="False" OnPageIndexChanging="gv_InventoryCounts_PageIndexChanging"
+                                DataKeyNames="RetailerID" Width="100%" AllowPaging="true" PageSize="15">
+                                <Columns>
+                                    <asp:BoundField HeaderText="会员店" DataField="RetailerName" />
+                                    <asp:BoundField HeaderText="产品品类" DataField="ProductName" />
+                                    <asp:BoundField HeaderText="进货量" DataField="PutInCounts" />
+                                    <asp:BoundField HeaderText="销售量" DataField="SellOutCounts" />
+                                    <asp:BoundField HeaderText="退货量" DataField="ReturnCounts" />
+                                    <asp:BoundField HeaderText="兑换量" DataField="ExchangeCounts" />
+                                    <asp:BoundField HeaderText="当前库存" DataField="InventoryCounts" />
+                                </Columns>
+                                <EmptyDataTemplate>
+                                    无数据
+                                </EmptyDataTemplate>
+                            </mcs:UC_GridView>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" width="100%" height="28px" border="0" class="h3Row">
+                                <tr>
+                                    <td>
+                                        <h3>会员发展数量概况</h3>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mcs:UC_GridView ID="gv_MemberCounts" runat="server" AutoGenerateColumns="False"
+                                DataKeyNames="RetailerID" Width="100%" AllowPaging="False" PageSize="1">
+                                <Columns>
+                                    <asp:BoundField HeaderText="" DataField="City1" />
+                                    <asp:BoundField HeaderText="" DataField="City2" />
+                                    <asp:BoundField HeaderText="" DataField="City3" />
+                                    <asp:BoundField HeaderText="会员店" DataField="RetailerName" />
+                                    <asp:BoundField HeaderText="注册会员数" DataField="RegistMemberCounts" />
+                                    <asp:BoundField HeaderText="成交会员数" DataField="TotalCounts" />
+                                    <asp:BoundField HeaderText="活跃会员数" DataField="ActiveMemberCounts" />
+                                    <asp:BoundField HeaderText="本月会员数" DataField="MemberCountsThisMonth" />
+                                    <asp:BoundField HeaderText="本月新会员数" DataField="NewMemberCountsThisMonth" />
+                                </Columns>
+                                <EmptyDataTemplate>
+                                    无数据
+                                </EmptyDataTemplate>
+                            </mcs:UC_GridView>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="color: #0000FF">注册会员数:</span>在我店注册的会员数量。 <span style="color: #0000FF">成交会员数:</span>1年以内在本店有过购买的会员数量。
+                                    <span style="color: #0000FF">活跃会员数:</span>3个月内在本店有过购买的会员数量。<br />
+                            <span style="color: #0000FF">本月会员数:</span>本自然月开始在本店有过购买的会员数量。 <span style="color: #0000FF">本月新会员数:</span>本自然月开始在本店首次购买的会员数.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="2px">&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+</asp:Content>
+

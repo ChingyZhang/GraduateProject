@@ -1,0 +1,5 @@
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.EBM\bin\Debug\MCSFramework.Model.EBM.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.EBM\bin\Debug\MCSFramework.Model.EBM.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.EBM\bin\Debug\MCSFramework.IFStrategy.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.EBM\obj\Debug\MCSFramework.Model.EBM.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.EBM\obj\Debug\MCSFramework.Model.EBM.pdb

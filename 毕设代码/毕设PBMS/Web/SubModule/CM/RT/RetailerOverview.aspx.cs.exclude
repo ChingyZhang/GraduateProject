@@ -1,0 +1,160 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Data;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using MCSFramework.BLL.CM;
+using MCSFramework.Model.CM;
+using MCSFramework.Common;
+using MCSFramework.BLL.Pub;
+using MCSFramework.Model.Pub;
+using MCSFramework.BLL.RM;
+using MCSFramework.Model.EBM;
+using MCSFramework.BLL.EBM;
+using MCSFramework.Model.RM;
+
+public partial class SubModule_CM_RT_RetailerOverview : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            #region 获取页面参数
+            if (Request.QueryString["ClientID"] != null)
+            {
+                ViewState["ClientID"] = Int32.Parse(Request.QueryString["ClientID"]);
+                Session["ClientID"] = ViewState["ClientID"];
+            }
+            else if (Session["ClientID"] != null)
+            {
+                ViewState["ClientID"] = Int32.Parse(Session["ClientID"].ToString());
+            }
+            #endregion
+            if (ViewState["ClientID"] != null)
+            {
+                BindDropDown();
+                BindData();
+                BindMemberCounts();
+            }
+            else
+            {
+                MessageBox.ShowAndRedirect(this, "请先在‘零售商列表’中选择要查看的零售商！", "RetailerList.aspx?URL=" + Request.Url.PathAndQuery);
+            }
+        }
+
+    }
+
+    private void BindDropDown()
+    {
+        ddl_Month.DataSource = AC_AccountMonthBLL.GetModelList("BeginDate<GETDATE()");
+        ddl_Month.DataBind();
+        ddl_Month.SelectedValue = AC_AccountMonthBLL.GetCurrentMonth().ToString();
+    }
+
+
+    private void BindData()
+    {
+        CM_Client m = new CM_ClientBLL((int)ViewState["ClientID"]).Model;
+        pl_detail.BindData(m);
+        BindGrid_ChangeDetail();
+        DataTable dt = INV_InventoryBLL.GetClientJXC((int)ViewState["ClientID"]);
+        gv_InventoryCounts.DataSource = dt;
+        gv_InventoryCounts.DataBind();
+
+        #region 显示门店主账户
+        IList<RM_PrimaryAccount> lists = RM_PrimaryAccountBLL.GetModelList("SubRetailer=" + m.ID.ToString() + " AND Enabled='Y'");
+        if (lists.Count > 0)
+        {
+            CM_Client p = new CM_ClientBLL(lists[0].PrimaryRetailer).Model;
+            if (p != null)
+            {
+                lb_PrimaryAccountName.Text = "积分归属主账户门店："+ p.FullName;
+            }
+        }
+        
+        #endregion
+    }
+    protected void gv_InventoryCounts_PageIndexChanging(object sender, GridViewPageEventArgs e)
+    {
+        gv_InventoryCounts.PageIndex = e.NewPageIndex;
+       // DataBind();
+        DataTable dt = INV_InventoryBLL.GetClientJXC((int)ViewState["ClientID"]);
+        gv_InventoryCounts.DataSource = dt;
+        gv_InventoryCounts.DataBind();
+    }
+
+    private void BindGrid_ChangeDetail()
+    {
+        if (ViewState["ClientID"] != null)
+        {
+            if (MCSTabControl1.SelectedIndex == 0)
+            {
+                DataTable dt = RM_AccountChangeDetailBLL.GetChangeTableByMonth(0, (int)ViewState["ClientID"], int.Parse(ddl_Month.SelectedValue));
+
+                dt = MatrixTable.Matrix(dt, new string[] { "AccountTypeName" }, "ChangeTypeName", "ChangePoints", false, false);
+
+                dt.Columns[0].ColumnName = "账户类型";
+                gv_ChangeByMonth.DataSource = dt;
+                gv_ChangeByMonth.DataBind();
+            }
+            else
+            {
+                AC_AccountMonth month = new AC_AccountMonthBLL(int.Parse(ddl_Month.SelectedValue)).Model;
+                gv_ChangeDetail.ConditionString = " Retailer=" + ViewState["ClientID"].ToString() +
+                    " AND InsertTime BETWEEN '" + month.BeginDate.ToString("yyyy-MM-dd") + "' AND '" + month.EndDate.ToString("yyyy-MM-dd HH:mm") + "'";
+                gv_ChangeDetail.BindGrid();
+            }
+
+            gv_ChangeByMonth.Visible = MCSTabControl1.SelectedIndex == 0;
+            gv_ChangeDetail.Visible = MCSTabControl1.SelectedIndex == 1;
+            gv_ChangeDetail.OrderFields = "RM_AccountChangeDetail_ID DESC";
+        }
+    }
+
+    protected void gv_ChangeByMonth_DataBound(object sender, EventArgs e)
+    {
+        if (gv_ChangeByMonth.HeaderRow != null)
+        {
+            foreach (GridViewRow r in gv_ChangeByMonth.Rows)
+            {
+                #region 金额数据格式化
+                if (r.Cells.Count > 1)
+                {
+                    for (int i = 1; i < r.Cells.Count; i++)
+                    {
+                        decimal d;
+                        if (decimal.TryParse(r.Cells[i].Text, out d))
+                        {
+                            r.Cells[i].Text = d.ToString("#,#.##");
+                        }
+                    }
+                }
+                #endregion
+            }
+        }
+    }
+
+    protected void ddl_Month_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        gv_ChangeByMonth.PageIndex = 0;
+        gv_ChangeDetail.PageIndex = 0;
+        BindGrid_ChangeDetail();
+    }
+
+    protected void MCSTabControl1_OnTabClicked(object sender, MCSControls.MCSTabControl.MCSTabClickedEventArgs e)
+    {
+        gv_ChangeByMonth.PageIndex = 0;
+        gv_ChangeDetail.PageIndex = 0;
+        BindGrid_ChangeDetail();
+    }
+
+    private void BindMemberCounts()
+    {
+        int OrganizeCity = 1, Retailer = (int)ViewState["ClientID"];
+        DataTable dt = RM_MemberBLL.GetMemberCountsByRetailer(OrganizeCity, Retailer);
+        gv_MemberCounts.DataSource = dt;
+        gv_MemberCounts.DataBind();
+    }
+}

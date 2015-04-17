@@ -8,7 +8,7 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections;
-using MCSFramework.Common;
+//using MCSFramework.Common;
 using MCSFramework.IFStrategy;
 
 namespace MCSFramework.Model

@@ -41,7 +41,6 @@ E:\毕设\毕设EMP\BLL\BLL.SVM\obj\Debug\MCSFramework.BLL.SVM.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.BLL.SVM.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.BLL.SVM.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.BLL.dll
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.Common.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.Model.SVM.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.SQLDAL.dll
@@ -58,3 +57,6 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.Model.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\obj\Debug\BLL.SVM.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\obj\Debug\MCSFramework.BLL.SVM.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\obj\Debug\MCSFramework.BLL.SVM.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.Model.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.SVM\bin\Debug\MCSFramework.SQLDAL.Pub.pdb

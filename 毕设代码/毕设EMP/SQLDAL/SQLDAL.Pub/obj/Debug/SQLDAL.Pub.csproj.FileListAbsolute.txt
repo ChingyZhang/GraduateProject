@@ -29,3 +29,14 @@ E:\毕设\毕设EMP\SQLDAL\SQLDAL.Pub\obj\Debug\MCSFramework.SQLDAL.Pub.pdb
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\obj\Debug\SQLDAL.Pub.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\obj\Debug\MCSFramework.SQLDAL.Pub.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\obj\Debug\MCSFramework.SQLDAL.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.SQLDAL.Pub.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.SQLDAL.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.DBUtility.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.IFStrategy.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.Model.Pub.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.Model.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.SQLDAL.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Pub\bin\Debug\MCSFramework.Common.dll

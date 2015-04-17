@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MCSFramework.SQLDAL</RootNamespace>
     <AssemblyName>MCSFramework.SQLDAL</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
     </SccProjectName>
@@ -25,6 +25,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,7 +45,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MCSFramework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="MCSFramework.Common, Version=1.13.11.8, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Web\Bin\MCSFramework.Common.dll</HintPath>
     </Reference>
@@ -96,7 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Model\Model\Model.csproj">
-      <Project>{C51E7F10-074C-48C0-B1AC-BA22A72B6FA2}</Project>
+      <Project>{c51e7f10-074c-48c0-b1ac-ba22a72b6fa2}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,0 +1,14 @@
+﻿[1]郭旭.基于.NET的企业进销存管理系统的设计与实现[D].吉林大学,2014.
+[2]初皆超.面向中小型制造业企业的进销存系统的研究与开发[D].大连交通大学,2009.
+[3]于瑶瑶.企业进销存管理系统的设计与实现[D].山东大学,2009.
+[4]李洪涛.面向中小家电企业进销存管理系统的设计与开发[D].合肥工业大学,2010.
+[5]廖列营.基于C#.Net三层架构的韩师数码企业进销存管理系统[D].华东师范大学,2010.
+[6]郭静毅.基于WEB企业进销存应用系统的研究与实现[D].中国地质大学（北京）,2008.
+[7]孙彪彪.中小型制造企业进销存管理信息系统设计与实现[D].北京林业大学,2014.
+[8]王洪迪.基于ASP.NET的燃气具企业的进销存系统设计与实现[D].合肥工业大学,2012.
+
+[9]杨书清. 基于WEB企业进销存系统的研究与实现[D].中国海洋大学,2010.
+[10]庄翔翔. 基于B/S架构的中小企业进销存管理系统的设计与实现[D].中国海洋大学,2010.
+[11]赵韩,李洪涛,陈科. 基于ASP的中小企业进销存管理系统研究[J]. 微计算机信息,2010,33:43-45.
+[12]Xiao-yun JIANG,Pin CHEN,Rong ZHENG Department of Management Science,Xiamen University of Technology,Xiamen,China. Study of Modeling and Simulation of Flexsim-based Inventory Management System[A]. 中国机械工程学会工业工程分会、IEEE北京分会.Proceedings of 2010 IEEE the 17th International Conference on Industrial Engineering and Engineering Management(Volume 2)[C].中国机械工程学会工业工程分会、IEEE北京分会:,2010:4.
+[13]Kai WANG. The Research of Inventory Management Modes Based on Supply Chain Management[A]. Chinese Industrial Engineering Institution，CMES、Institute of Electrical and Electronic Engineers、Beijing Section.Proceedings of 2012 IEEE 19th International Conference on Industrial Engineering and Engineering Management(IE&EM 2012)[C].Chinese Industrial Engineering Institution，CMES、Institute of Electrical and Electronic Engineers、Beijing Section:,2012:5.

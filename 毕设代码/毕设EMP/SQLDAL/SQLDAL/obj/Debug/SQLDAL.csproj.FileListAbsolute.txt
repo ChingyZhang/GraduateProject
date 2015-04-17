@@ -21,7 +21,6 @@ E:\毕设\毕设EMP\SQLDAL\SQLDAL\obj\Debug\MCSFramework.SQLDAL.pdb
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL\bin\Debug\MCSFramework.SQLDAL.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL\bin\Debug\MCSFramework.SQLDAL.pdb
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL\bin\Debug\MCSFramework.DBUtility.dll
-E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL\bin\Debug\MCSFramework.Model.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL\bin\Debug\MCSFramework.Model.pdb
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL\obj\Debug\SQLDAL.csprojResolveAssemblyReference.cache

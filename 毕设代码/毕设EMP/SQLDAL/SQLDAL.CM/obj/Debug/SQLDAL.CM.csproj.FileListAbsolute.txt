@@ -37,3 +37,6 @@ E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CM\bin\Debug\MCSFramework.Model.p
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CM\obj\Debug\SQLDAL.CM.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CM\obj\Debug\MCSFramework.SQLDAL.CM.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CM\obj\Debug\MCSFramework.SQLDAL.CM.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CM\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CM\bin\Debug\MCSFramework.SQLDAL.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CM\bin\Debug\MCSFramework.Common.dll

@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81C07D64-5239-4786-A53F-8D65E3691936}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImportExcelTDP</RootNamespace>
+    <AssemblyName>ImportExcelTDP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\Source\YSLEMMP.root\Web\Bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Common">
+      <HintPath>..\Web\Bin\MCSFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.DBUtility">
+      <HintPath>..\Web\Bin\MCSFramework.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.IFStrategy">
+      <HintPath>..\Web\Bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLL\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>DLL\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>DLL\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>DLL\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>DLL\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLL\office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientInit.cs" />
+    <Compile Include="DataTableFromExcel.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExcel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\SAP_ZSD\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\SAP_ZSD\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_ZSD\Ztdplog1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_ZSD\Z_SD_SD_SH.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\NPOI.dll" />
+    <Content Include="DLL\NPOI.OOXML.dll" />
+    <Content Include="DLL\NPOI.OOXML.XML" />
+    <Content Include="DLL\NPOI.OpenXml4Net.dll" />
+    <Content Include="DLL\NPOI.OpenXml4Net.XML" />
+    <Content Include="DLL\NPOI.OpenXmlFormats.dll" />
+    <Content Include="DLL\NPOI.XML" />
+    <Content Include="Image\arrow_down.ico" />
+    <Content Include="Image\arrow_up.ico" />
+    <Content Include="Image\bubble.ico" />
+    <Content Include="Image\document.ico" />
+    <Content Include="Image\document_pencil.ico" />
+    <Content Include="Image\logoPictureBox.Image.png" />
+    <Content Include="Image\pause.ico" />
+    <Content Include="Image\play.ico" />
+    <Content Include="Image\reload.ico" />
+    <Content Include="Image\settings.ico" />
+    <Content Include="Image\stop.ico" />
+    <Content Include="Image\toolbtn_Begin.Image.png" />
+    <Content Include="Image\toolBtn_EndB.Image.png" />
+    <Content Include="Image\toolbtn_Help.Image.png" />
+    <Content Include="Image\toolbtn_QuitA.Image.png" />
+    <Content Include="Image\toolbtn_QuitB.Image.png" />
+    <Content Include="Image\toolbtn_Set.Image.png" />
+    <Content Include="Image\toolbtn_StartA.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.CM\BLL.CM.csproj">
+      <Project>{d2f82fc7-da66-4673-a2da-d159c1818d0b}</Project>
+      <Name>BLL.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.PBM\BLL.PBM.csproj">
+      <Project>{2594d58b-f8e9-42b2-ad47-e35bab2a3298}</Project>
+      <Name>BLL.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.Pub\BLL.Pub.csproj">
+      <Project>{4b38359b-42c5-4add-aa2b-bff873b929df}</Project>
+      <Name>BLL.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.VST\BLL.VST.csproj">
+      <Project>{9dda87f5-e3d4-4346-93a7-6c49c9841bec}</Project>
+      <Name>BLL.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL\BLL.csproj">
+      <Project>{f5f19eab-c643-4ead-a734-6853d31015a5}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.CM\Model.CM.csproj">
+      <Project>{1afb8b31-bfac-4d7b-8ae1-1d69d4010667}</Project>
+      <Name>Model.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.PBM\Model.PBM.csproj">
+      <Project>{ddbe4bd5-6381-4bf7-a424-794025c1d6d5}</Project>
+      <Name>Model.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.Pub\Model.Pub.csproj">
+      <Project>{9258ac7d-2ae4-422b-9cbb-3801839c81fb}</Project>
+      <Name>Model.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.VST\Model.VST.csproj">
+      <Project>{28d3c00f-3651-42c6-bfc2-996ebd54dc92}</Project>
+      <Name>Model.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model\Model.csproj">
+      <Project>{c51e7f10-074c-48c0-b1ac-ba22a72b6fa2}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.CM\SQLDAL.CM.csproj">
+      <Project>{945c3b89-fbbf-4369-92ef-c3231410ebad}</Project>
+      <Name>SQLDAL.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.PBM\SQLDAL.PBM.csproj">
+      <Project>{e68b4385-e9c6-4a50-bed7-fc70e9c3cd2f}</Project>
+      <Name>SQLDAL.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.Pub\SQLDAL.Pub.csproj">
+      <Project>{47e0d9d5-bb49-420c-a2aa-eb0b36c25f24}</Project>
+      <Name>SQLDAL.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.VST\SQLDAL.VST.csproj">
+      <Project>{dc98f254-36a8-4065-b2b2-4d5f9ce8430b}</Project>
+      <Name>SQLDAL.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL\SQLDAL.csproj">
+      <Project>{0ea523be-4990-45ef-8a49-a335a1c30e9a}</Project>
+      <Name>SQLDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.IPT\BLL.IPT.csproj">
+      <Project>{59039e6d-10f0-4b3a-bd4b-7c3e4d536dec}</Project>
+      <Name>BLL.IPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.IPT\Model.IPT.csproj">
+      <Project>{20d95905-6eec-43aa-b685-5a20ddf71ccb}</Project>
+      <Name>Model.IPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.IPT\SQLDAL.IPT.csproj">
+      <Project>{e339fe05-d694-41ef-a8a6-04c2b9997bfc}</Project>
+      <Name>SQLDAL.IPT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.16.255.44:8001/sap/bc/srt/rfc/sap/Z_SD_SD_SH%3fsap-client=800&amp;wsdl=1.1">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_ZSD\</RelPath>
+      <UpdateFromURL>http://172.16.255.44:8001/sap/bc/srt/rfc/sap/Z_SD_SD_SH%3fsap-client=800&amp;wsdl=1.1</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ImportExcelSVM_SAP_ZSD_Z_SD_SD_SHService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

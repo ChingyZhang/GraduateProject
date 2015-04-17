@@ -29,3 +29,14 @@ E:\毕设\毕设EMP\SQLDAL\SQLDAL.CAT\obj\Debug\MCSFramework.SQLDAL.CAT.pdb
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\obj\Debug\SQLDAL.CAT.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\obj\Debug\MCSFramework.SQLDAL.CAT.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\obj\Debug\MCSFramework.SQLDAL.CAT.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.SQLDAL.CAT.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.SQLDAL.CAT.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.DBUtility.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.IFStrategy.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.Model.CAT.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.Model.CAT.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.CAT\bin\Debug\MCSFramework.SQLDAL.pdb

@@ -68,9 +68,7 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.Lo
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.Logistics.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.CM.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.dll
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.Pub.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.SVM.dll
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.Common.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.Model.CM.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.Model.Logistics.dll
@@ -97,3 +95,8 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.SQLDAL
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\obj\Debug\BLL.Logistics.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\obj\Debug\MCSFramework.BLL.Logistics.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\obj\Debug\MCSFramework.BLL.Logistics.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.Model.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.Pub.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.BLL.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Logistics\bin\Debug\MCSFramework.SQLDAL.Pub.pdb

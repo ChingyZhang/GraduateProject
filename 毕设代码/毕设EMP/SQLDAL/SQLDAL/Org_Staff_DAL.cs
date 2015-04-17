@@ -13,7 +13,6 @@ using System.Collections;
 using System.Collections.Generic;
 using MCSFramework.Common;
 
-
 namespace MCSFramework.SQLDAL
 {
     /// <summary>

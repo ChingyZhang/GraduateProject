@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.16.255.44:8001/sap/bc/srt/rfc/sap/Z_SD_SD_SH?sap-client=800&amp;wsdl=1.1" filename="Z_SD_SD_SH.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

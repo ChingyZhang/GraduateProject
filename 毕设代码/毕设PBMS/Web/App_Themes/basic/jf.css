@@ -1,0 +1,679 @@
+﻿
+.leftMenu1
+{
+    FLOAT: left;
+    WIDTH: 165px;
+}
+
+    .leftMenu1 .leftmenuTop
+    {
+        OVERFLOW: hidden;
+        HEIGHT: 21px;
+        BACKGROUND: url(images/left_top1.png) no-repeat;
+        PADDING-BOTTOM: 0px;
+        TEXT-ALIGN: left;
+        PADDING-TOP: 10px;
+        PADDING-LEFT: 13px;
+        MARGIN: 0px;
+        PADDING-RIGHT: 0px;
+        WIDTH: 152px;
+    }
+
+    .leftMenu1 .leftmenuCenter
+    {
+        OVERFLOW: hidden;
+        HEIGHT: auto;
+        BACKGROUND: url(images/left_center1.png) repeat-y;
+        PADDING-BOTTOM: 0px;
+        PADDING-TOP: 0px;
+        /*PADDING-LEFT: 2px;
+        PADDING-RIGHT: 4px;*/
+        MARGIN: 0px;
+        WIDTH: 159px;
+    }
+
+        .leftMenu1 .leftmenuCenter .dT1
+        {
+            PADDING-BOTTOM: 0px;
+            TEXT-ALIGN: left;
+            PADDING-TOP: 0px;
+            PADDING-LEFT: 11px;
+            CLEAR: both;
+            MARGIN-TOP: 16px;
+            PADDING-RIGHT: 8px;
+            WIDTH: 140px;
+        }
+
+        .leftMenu1 .leftmenuCenter .dT2
+        {
+            COLOR: #e4d69e;
+            PADDING-BOTTOM: 0px;
+            TEXT-ALIGN: left;
+            PADDING-TOP: 8px;
+            PADDING-LEFT: 11px;
+            CLEAR: both;
+            MARGIN: 0px;
+            LINE-HEIGHT: 18px;
+            PADDING-RIGHT: 8px;
+            WIDTH: 140px;
+        }
+
+        .leftMenu1 .leftmenuCenter .dT3
+        {
+            TEXT-ALIGN: left;
+            PADDING-TOP: 15px;
+            CLEAR: both;
+            MARGIN: 0px;
+            WIDTH: 159px;
+        }
+
+    .leftMenu1 .leftmenuBottom
+    {
+        OVERFLOW: hidden;
+        HEIGHT: 17px;
+        BACKGROUND: url(images/left_bottom1.png) no-repeat;
+        WIDTH: 165px;
+    }
+
+.TopBgPosition
+{
+    HEIGHT: 90px;
+    /*background-color:white;*/
+    /*POSITION: static;*/
+    /*WIDTH: 1440px;*/
+    padding:5px;
+}
+
+
+.top_logo
+{
+    FLOAT: left;
+    TEXT-ALIGN: left;
+    PADDING-BOTTOM: 22px;
+    PADDING-TOP: 22px;
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 0px;
+
+}
+
+.top_right
+{
+    FLOAT: right;
+    TEXT-ALIGN: right;
+}
+
+.top_rightDiv1
+{
+    COLOR: #e9e3ca;
+    PADDING-BOTTOM: 7px;
+    TEXT-ALIGN: right;
+    PADDING-TOP: 7px;
+    PADDING-LEFT: 0px;
+    CLEAR: both;
+    PADDING-RIGHT: 16px;
+}
+
+.top_rightDiv2 {
+    MARGIN-top: 10px;
+    HEIGHT: 78px;
+    background-color: #FF9D9D;
+    border-radius: 4px; /*BACKGROUND: url(images/top_right_bg1.png) no-repeat;*/
+    CLEAR: both;
+    WIDTH: 580px;
+}
+
+.top_rightDiv3
+{
+    COLOR: #eeeeee;
+    PADDING-BOTTOM: 0px;
+    TEXT-ALIGN: right;
+    PADDING-TOP: 8px;
+    PADDING-LEFT: 0px;
+    CLEAR: both;
+    PADDING-RIGHT: 18px;
+}
+
+
+.top_rightDiv4
+{
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 3px;
+    PADDING-LEFT: 70px;
+    CLEAR: both;
+    PADDING-RIGHT: 0px;
+}
+
+.top_bar
+{
+    clear: both; 
+    FLOAT: left;
+    HEIGHT: 23px;
+    background-color:#e81b15;
+    border-radius:2px;
+    /*BACKGROUND: url(images/toptitlebg.png) repeat;*/
+    /*POSITION: static;*/
+    WIDTH: 100%;
+    text-align:right;    
+    padding-top:5px;
+    color:white;
+}
+
+.top_bar_div
+{
+    HEIGHT: 30px;
+    BACKGROUND: url(images/top_bdr_left1.png) no-repeat left top;
+    FLOAT: left;
+    PADDING-LEFT: 13px;
+}
+
+.top_bar_div2
+{
+    HEIGHT: 22px;
+    BACKGROUND: url(images/top_bdr_center1.png) repeat-x;
+    FLOAT: left;
+    TEXT-ALIGN: center;
+    PADDING-TOP: 6px;
+}
+
+.top_bar_div3
+{
+    HEIGHT: 30px;
+    BACKGROUND: url(images/top_bdr_right1.png) no-repeat left top;
+    FLOAT: left;
+    WIDTH: 13px;
+}
+
+.top_bar_div0
+{
+    HEIGHT: 28px;
+    FLOAT:left;
+    PADDING-LEFT: 13px;
+    padding-top: 6px;
+}
+.mastercontent {
+    border:1px solid #bbbbbb;
+    border-radius:10px;
+    padding:8px;
+    background-color:#ffffff;
+    margin-bottom:10px;
+}
+.divtop_left {
+    height:8px;
+    WIDTH: 8px;
+    BACKGROUND: url(images/divtop_left.png) no-repeat left top;
+    FLOAT: left;
+}
+.divtop_middle {
+    height:8px;
+    BACKGROUND: url(images/divtop_middle.png) repeat-x;
+}
+.divtop_right {
+    float:right;
+    height:8px;
+    BACKGROUND: url(images/divtop_right.png) no-repeat right top;
+}
+
+.divcenter_left {
+    BACKGROUND: url(images/divcenter_left.png) repeat-y;
+    FLOAT: left;
+    WIDTH: 8px;
+}
+.divcenter_right {
+    BACKGROUND: url(images/divcenter_right.png) repeat-y;
+    WIDTH: 8px;
+}
+
+.divbottom_left {
+    height:8px;
+    WIDTH: 8px;
+    BACKGROUND: url(images/divbottom_left.png) no-repeat left top;
+    FLOAT: left;
+}
+.divbottom_middle {
+    height:8px;
+    BACKGROUND: url(images/divbottom_middle.png) repeat-x;
+}
+.divbottom_right {
+    height:8px;
+    BACKGROUND: url(images/divbottom_right.png) no-repeat right top;
+}
+
+
+A.fnt1
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #caa23f;
+}
+
+    A.fnt1:hover
+    {
+        COLOR: #caa23f;
+        TEXT-DECORATION: underline;
+    }
+
+.fnt1
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #caa23f;
+}
+
+.fnt2
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #b89a31;
+}
+
+A.fnt2:hover
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #b89a31;
+    TEXT-DECORATION: underline;
+}
+
+.fnt3
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+.fnt4
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #ffffff;
+}
+
+A.fnt4:hover
+{
+    TEXT-DECORATION: underline;
+}
+
+.fnt5
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    FONT-WEIGHT: bold;
+    COLOR: #ff5409;
+}
+
+.fnt6
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bold;
+    COLOR: #ff5409;
+}
+
+.fnt6_del
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bold;
+    COLOR: #ff5409;
+    text-decoration: line-through;
+}
+
+.fnt7
+{
+    COLOR: #bebebe;
+}
+
+A.fnt7:hover
+{
+    TEXT-DECORATION: underline;
+}
+
+.fnt8
+{
+    COLOR: #fff;
+}
+
+A.fnt8:hover
+{
+    TEXT-DECORATION: underline;
+}
+
+.fnt9
+{
+    FONT-SIZE: 13px;
+    FONT-FAMILY: "宋体";
+    FONT-WEIGHT: bold;
+    COLOR: #ac8734;
+}
+
+.fnt10
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #ac8734;
+}
+
+A.fnt10:hover
+{
+    TEXT-DECORATION: underline;
+}
+
+.fnt11
+{
+    COLOR: #666666;
+}
+
+.fnt12
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #ff5409;
+}
+
+.fnt13
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #4a4a4a;
+    LINE-HEIGHT: 18px;
+}
+
+.fnt14
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #4a4a4a;
+    LINE-HEIGHT: 30px;
+}
+
+.fnt15
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #7a7a7a;
+}
+
+.fnt16
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #000000;
+}
+
+.fnt17
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    FONT-WEIGHT: bold;
+    COLOR: #ff5409;
+}
+
+.fnt18
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #a1841d;
+}
+
+.fnt19
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #ff5409;
+}
+
+.fnt20
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #1ab9e1;
+}
+
+.fnt21
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #b48600;
+}
+
+.fnt22
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bold;
+    COLOR: #ff5409;
+}
+
+.fnt23
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #ff5409;
+}
+
+.fnt24
+{
+    FONT-SIZE: 16px;
+    FONT-FAMILY: "宋体";
+    FONT-WEIGHT: bold;
+    COLOR: #ff5409;
+}
+
+.fnt25
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #ff5409;
+}
+
+.fnt26
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #a1841d;
+}
+
+.fnt27
+{
+    FONT-SIZE: 24px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #ff5409;
+}
+
+.fnt28
+{
+    FONT-SIZE: 18px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #a1841d;
+}
+
+.fnt29
+{
+    FONT-SIZE: 18px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #fe5f18;
+}
+
+.fnt30
+{
+    FONT-SIZE: 36px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #ff5409;
+}
+
+.fnt31
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #ac8734;
+}
+
+.fnt32
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #c1981e;
+}
+
+.fnt33
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #47b9e7;
+}
+
+.fnt34
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    FONT-WEIGHT: bold;
+    COLOR: #47b9e7;
+}
+
+.fnt35
+{
+    FONT-SIZE: 16px;
+    FONT-FAMILY: "宋体";
+    FONT-WEIGHT: bold;
+    COLOR: #a1841e;
+}
+
+.fnt36
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #a1841e;
+}
+
+.fnt36
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #fd5306;
+}
+
+.fnt37
+{
+    FONT-SIZE: 18px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #9b7628;
+}
+
+.fnt38
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #9b7628;
+}
+
+.fnt39
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    FONT-WEIGHT: bold;
+    COLOR: #ff5b00;
+}
+
+.fnt40
+{
+    FONT-SIZE: 20px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #a47c1c;
+}
+
+.fnt42
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "宋体";
+    COLOR: #279acc;
+    TEXT-DECORATION: underline;
+}
+
+.fnt43
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #e60024;
+}
+
+.fnt44
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "宋体";
+    COLOR: #1ab9e1;
+}
+
+.fnt45
+{
+    FONT-SIZE: 13px;
+    FONT-FAMILY: "宋体";
+    COLOR: #b48922;
+}
+
+.fnt46
+{
+    FONT-SIZE: 13px;
+    FONT-FAMILY: "宋体";
+    COLOR: #299ace;
+    TEXT-DECORATION: underline;
+}
+
+.fnt47
+{
+    FONT-SIZE: 24px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #ff5409;
+}
+
+.fnt48
+{
+    FONT-SIZE: 24px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #a1841d;
+}
+
+.fnt49
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #a1841d;
+}
+
+.fnt50
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #ff5409;
+}
+
+.fnt51
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #ff5409;
+}
+
+.fnt52
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #a1841d;
+}
+
+.fnt53
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #a1841d;
+}
+
+.fnt54
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "微软雅黑";
+    COLOR: #ff5409;
+}
+
+.loginbox {
+            height: 348px;
+            position: absolute;
+            top: -360px;
+            left: 480px;
+            z-index: 999999;
+            background-color: white;
+        }

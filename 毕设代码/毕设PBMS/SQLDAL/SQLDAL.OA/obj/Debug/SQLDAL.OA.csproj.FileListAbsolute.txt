@@ -1,0 +1,14 @@
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.SQLDAL.OA.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.SQLDAL.OA.pdb
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.Common.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.DBUtility.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.IFStrategy.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.Model.OA.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.SQLDAL.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.Model.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.Model.OA.pdb
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.SQLDAL.pdb
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\bin\Debug\MCSFramework.Model.pdb
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\obj\Debug\SQLDAL.OA.csprojResolveAssemblyReference.cache
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\obj\Debug\MCSFramework.SQLDAL.OA.dll
+F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.OA\obj\Debug\MCSFramework.SQLDAL.OA.pdb

@@ -4,7 +4,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using MCSFramework.DBUtility;
-using MCSFramework.Common;
+//using MCSFramework.Common;
 
 namespace MCSFramework.SQLDAL
 {
@@ -82,7 +82,7 @@ namespace MCSFramework.SQLDAL
                 SQLDatabase.MakeInParam("@Username", SqlDbType.VarChar,50,username),
                 SQLDatabase.MakeInParam("@AuthKey", SqlDbType.VarChar,50,authkey),
                 SQLDatabase.MakeInParam("@IpAddr", SqlDbType.VarChar,50,ipaddr),
-                SQLDatabase.MakeInParam("@MACAddr", SqlDbType.VarChar,50,MACAddr)
+                //SQLDatabase.MakeInParam("@MACAddr", SqlDbType.VarChar,50,MACAddr)
             };
             return SQLDatabase.RunProc("MCS_SYS.dbo.sp_User_LoginSuccess", parms);
         }
@@ -136,7 +136,7 @@ namespace MCSFramework.SQLDAL
             SqlDataReader dr = null;
             SQLDatabase.RunProc("MCS_SYS.dbo.sp_User_GetOnlineUserList", out dr);
 
-            return Tools.ConvertDataReaderToDataTable(dr);
+            return MCSFramework.Common.Tools.ConvertDataReaderToDataTable(dr);
         }
 
         public int GetStaffIDByUsername(string username)

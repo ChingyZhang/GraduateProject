@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDE30293-4C3A-4FD3-B2A9-5E4F7435EB58}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSFramework.WSI</RootNamespace>
+    <AssemblyName>MCSFramework.WSI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.1.271, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.BLL, Version=1.14.6.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Bin\MCSFramework.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Common">
+      <HintPath>..\Web\Bin\MCSFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Common.Encrypter, Version=1.2014.1.20, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MCSFramework.Common.Encrypter.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.IFStrategy">
+      <HintPath>..\Web\Bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Bin\MCSFramework.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICSharpCode.SharpZipLib.dll" />
+    <Content Include="MCSWSIAPI.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUpdateService.cs" />
+    <Compile Include="Code\CryptHelper.cs" />
+    <Compile Include="Code\DeviceCryptKeyLists.cs" />
+    <Compile Include="Code\GoogleMapAPI.cs" />
+    <Compile Include="Code\WGSToGCJAPI.cs" />
+    <Compile Include="Code\WSIReqPack.cs" />
+    <Compile Include="Code\ConvertZip.cs" />
+    <Compile Include="Model\ARAPInfo.cs" />
+    <Compile Include="Model\BalanceUsageInfo.cs" />
+    <Compile Include="Model\CashFlowInfo.cs" />
+    <Compile Include="Model\ClientInfo.cs" />
+    <Compile Include="Model\Delivery.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\TDPStandardPrice.cs" />
+    <Compile Include="Model\Vehicle.cs" />
+    <Compile Include="Model\VisitPlan.cs" />
+    <Compile Include="Model\VisitRoute.cs" />
+    <Compile Include="Model\VisitTemplate.cs" />
+    <Compile Include="Model\VisitWorkList.cs" />
+    <Compile Include="NoticeService.cs" />
+    <Compile Include="OfficialCityService.cs" />
+    <Compile Include="MCSWSIAPI.asmx.cs">
+      <DependentUpon>MCSWSIAPI.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\AppModule.cs" />
+    <Compile Include="Model\APPTest.cs" />
+    <Compile Include="Model\AppVersion.cs" />
+    <Compile Include="Model\Attachment.cs" />
+    <Compile Include="Model\DataItem.cs" />
+    <Compile Include="Model\GoogleGeocodingAPI.cs" />
+    <Compile Include="Model\Inventory.cs" />
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\Notice.cs" />
+    <Compile Include="Model\OfficialCity.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="PBMService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="UserLogin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.CM\BLL.CM.csproj">
+      <Project>{d2f82fc7-da66-4673-a2da-d159c1818d0b}</Project>
+      <Name>BLL.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.OA\BLL.OA.csproj">
+      <Project>{e00fbd9c-bc2a-4439-b90c-e2ae9c5b6f6d}</Project>
+      <Name>BLL.OA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.PBM\BLL.PBM.csproj">
+      <Project>{2594d58b-f8e9-42b2-ad47-e35bab2a3298}</Project>
+      <Name>BLL.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.Pub\BLL.Pub.csproj">
+      <Project>{4b38359b-42c5-4add-aa2b-bff873b929df}</Project>
+      <Name>BLL.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.VST\BLL.VST.csproj">
+      <Project>{9dda87f5-e3d4-4346-93a7-6c49c9841bec}</Project>
+      <Name>BLL.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL\BLL.csproj">
+      <Project>{f5f19eab-c643-4ead-a734-6853d31015a5}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.CM\Model.CM.csproj">
+      <Project>{1afb8b31-bfac-4d7b-8ae1-1d69d4010667}</Project>
+      <Name>Model.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.OA\Model.OA.csproj">
+      <Project>{b8b48f57-26a0-4c65-96c9-ea265aab1046}</Project>
+      <Name>Model.OA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.PBM\Model.PBM.csproj">
+      <Project>{ddbe4bd5-6381-4bf7-a424-794025c1d6d5}</Project>
+      <Name>Model.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.Pub\Model.Pub.csproj">
+      <Project>{9258ac7d-2ae4-422b-9cbb-3801839c81fb}</Project>
+      <Name>Model.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.VST\Model.VST.csproj">
+      <Project>{28d3c00f-3651-42c6-bfc2-996ebd54dc92}</Project>
+      <Name>Model.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model\Model.csproj">
+      <Project>{c51e7f10-074c-48c0-b1ac-ba22a72b6fa2}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11689</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

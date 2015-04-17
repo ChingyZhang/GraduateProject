@@ -9,10 +9,11 @@ using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections;
-using MCSFramework.Common;
+//using MCSFramework.Common;
 using MCSFramework.DBUtility;
 using MCSFramework.SQLDAL;
 using MCSFramework.Model;
+using MCSFramework.Common;
 
 
 namespace MCSFramework.SQLDAL

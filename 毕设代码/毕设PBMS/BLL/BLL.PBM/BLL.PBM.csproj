@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2594D58B-F8E9-42B2-AD47-E35BAB2A3298}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSFramework.BLL.PBM</RootNamespace>
+    <AssemblyName>MCSFramework.BLL.PBM</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCSFramework.Common">
+      <HintPath>..\..\Web\Bin\MCSFramework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MCSFramework.IFStrategy">
+      <HintPath>..\..\Web\Bin\MCSFramework.IFStrategy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AC_ARAPListBLL.cs" />
+    <Compile Include="AC_BalanceUsageListBLL.cs" />
+    <Compile Include="AC_CashAccountBLL.cs" />
+    <Compile Include="AC_CashFlowListBLL.cs" />
+    <Compile Include="AC_CurrentAccountBLL.cs" />
+    <Compile Include="INV_InventoryBLL.cs" />
+    <Compile Include="INV_Inventory_CarryDownBLL.cs" />
+    <Compile Include="PBM_DeliveryBLL.cs" />
+    <Compile Include="PBM_DeliveryPayInfoBLL.cs" />
+    <Compile Include="PBM_OrderBLL.cs" />
+    <Compile Include="PBM_OrderPayInfoBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Model\Model.PBM\Model.PBM.csproj">
+      <Project>{ddbe4bd5-6381-4bf7-a424-794025c1d6d5}</Project>
+      <Name>Model.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SQLDAL\SQLDAL.PBM\SQLDAL.PBM.csproj">
+      <Project>{e68b4385-e9c6-4a50-bed7-fc70e9c3cd2f}</Project>
+      <Name>SQLDAL.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SQLDAL\SQLDAL\SQLDAL.csproj">
+      <Project>{0ea523be-4990-45ef-8a49-a335a1c30e9a}</Project>
+      <Name>SQLDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{f5f19eab-c643-4ead-a734-6853d31015a5}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -28,7 +28,6 @@ E:\毕设\毕设EMP\SQLDAL\SQLDAL.Promotor\obj\Debug\MCSFramework.SQLDAL.Promoto
 E:\毕设\毕设EMP\SQLDAL\SQLDAL.Promotor\obj\Debug\MCSFramework.SQLDAL.Promotor.pdb
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.SQLDAL.Promotor.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.SQLDAL.Promotor.pdb
-E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.Common.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.DBUtility.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.Model.Promotor.dll
@@ -40,3 +39,4 @@ E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.M
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\obj\Debug\SQLDAL.Promotor.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\obj\Debug\MCSFramework.SQLDAL.Promotor.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\obj\Debug\MCSFramework.SQLDAL.Promotor.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.Promotor\bin\Debug\MCSFramework.Common.dll

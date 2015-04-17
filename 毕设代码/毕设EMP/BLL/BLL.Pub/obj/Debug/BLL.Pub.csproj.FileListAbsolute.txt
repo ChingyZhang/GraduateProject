@@ -37,7 +37,6 @@ E:\毕设\毕设EMP\BLL\BLL.Pub\obj\Debug\MCSFramework.BLL.Pub.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.BLL.Pub.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.BLL.Pub.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.BLL.dll
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.Common.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.Model.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.Model.Pub.dll
@@ -52,3 +51,4 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.BLL.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\obj\Debug\BLL.Pub.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\obj\Debug\MCSFramework.BLL.Pub.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\obj\Debug\MCSFramework.BLL.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Pub\bin\Debug\MCSFramework.Common.dll

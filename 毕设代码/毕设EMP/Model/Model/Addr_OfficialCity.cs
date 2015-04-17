@@ -8,7 +8,7 @@ using System;
 using System.Collections;
 using System.Collections.Specialized;
 using System.Text;
-using MCSFramework.Common;
+//using MCSFramework.Common;
 using MCSFramework.IFStrategy;
 
 namespace MCSFramework.Model

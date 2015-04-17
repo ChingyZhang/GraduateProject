@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+警告: 请勿修改此文件，它将用于 Web 发布过程。
+
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{eb15acc7-fe39-444e-8dea-2eec4be8caf2}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/Web</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SourceWebProject>
+    </SourceWebProject>
+    <SourceWebMetabasePath>
+    </SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.CM\BLL.CM.csproj">
+      <Project>{D2F82FC7-DA66-4673-A2DA-D159C1818D0B}</Project>
+      <Name>BLL.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.IPT\BLL.IPT.csproj">
+      <Project>{59039E6D-10F0-4B3A-BD4B-7C3E4D536DEC}</Project>
+      <Name>BLL.IPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.OA\BLL.OA.csproj">
+      <Project>{E00FBD9C-BC2A-4439-B90C-E2AE9C5B6F6D}</Project>
+      <Name>BLL.OA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.PBM\BLL.PBM.csproj">
+      <Project>{2594D58B-F8E9-42B2-AD47-E35BAB2A3298}</Project>
+      <Name>BLL.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.Pub\BLL.Pub.csproj">
+      <Project>{4B38359B-42C5-4ADD-AA2B-BFF873B929DF}</Project>
+      <Name>BLL.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.Rpt\BLL.RPT.csproj">
+      <Project>{76EBF82C-8643-4E3E-933B-B301521116EC}</Project>
+      <Name>BLL.RPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.VST\BLL.VST.csproj">
+      <Project>{9DDA87F5-E3D4-4346-93A7-6C49C9841BEC}</Project>
+      <Name>BLL.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL\BLL.csproj">
+      <Project>{F5F19EAB-C643-4EAD-A734-6853D31015A5}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.CM\Model.CM.csproj">
+      <Project>{1AFB8B31-BFAC-4D7B-8AE1-1D69D4010667}</Project>
+      <Name>Model.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.IPT\Model.IPT.csproj">
+      <Project>{20D95905-6EEC-43AA-B685-5A20DDF71CCB}</Project>
+      <Name>Model.IPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.OA\Model.OA.csproj">
+      <Project>{B8B48F57-26A0-4C65-96C9-EA265AAB1046}</Project>
+      <Name>Model.OA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.PBM\Model.PBM.csproj">
+      <Project>{DDBE4BD5-6381-4BF7-A424-794025C1D6D5}</Project>
+      <Name>Model.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.Pub\Model.Pub.csproj">
+      <Project>{9258AC7D-2AE4-422B-9CBB-3801839C81FB}</Project>
+      <Name>Model.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.RPT\Model.RPT.csproj">
+      <Project>{F99AEB7F-493F-4B45-B824-4103E771861C}</Project>
+      <Name>Model.RPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.VST\Model.VST.csproj">
+      <Project>{28D3C00F-3651-42C6-BFC2-996EBD54DC92}</Project>
+      <Name>Model.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model\Model.csproj">
+      <Project>{C51E7F10-074C-48C0-B1AC-BA22A72B6FA2}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.CM\SQLDAL.CM.csproj">
+      <Project>{945C3B89-FBBF-4369-92EF-C3231410EBAD}</Project>
+      <Name>SQLDAL.CM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.IPT\SQLDAL.IPT.csproj">
+      <Project>{E339FE05-D694-41EF-A8A6-04C2B9997BFC}</Project>
+      <Name>SQLDAL.IPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.OA\SQLDAL.OA.csproj">
+      <Project>{68C3389F-6B6A-4DF0-AB7D-D2ACFA2E1049}</Project>
+      <Name>SQLDAL.OA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.PBM\SQLDAL.PBM.csproj">
+      <Project>{E68B4385-E9C6-4A50-BED7-FC70E9C3CD2F}</Project>
+      <Name>SQLDAL.PBM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.Pub\SQLDAL.Pub.csproj">
+      <Project>{47E0D9D5-BB49-420C-A2AA-EB0B36C25F24}</Project>
+      <Name>SQLDAL.Pub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.RPT\SQLDAL.RPT.csproj">
+      <Project>{1D8AC8CA-005F-4CAD-A588-5E8E21D87FD9}</Project>
+      <Name>SQLDAL.RPT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.VST\SQLDAL.VST.csproj">
+      <Project>{DC98F254-36A8-4065-B2B2-4D5F9CE8430B}</Project>
+      <Name>SQLDAL.VST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDAL\SQLDAL\SQLDAL.csproj">
+      <Project>{0EA523BE-4990-45EF-8A49-A335A1C30E9A}</Project>
+      <Name>SQLDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

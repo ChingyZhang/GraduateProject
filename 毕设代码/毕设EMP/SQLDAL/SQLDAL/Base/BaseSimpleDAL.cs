@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
-using MCSFramework.Common;
+//using MCSFramework.Common;
 using MCSFramework.IFStrategy;
 using MCSFramework.DBUtility;
 using MCSFramework.Model;

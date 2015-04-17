@@ -1,0 +1,7 @@
+I:\FirmusImportExcel\MCSFramework.Model.IPT\bin\Debug\MCSFramework.Model.IPT.dll
+I:\FirmusImportExcel\MCSFramework.Model.IPT\bin\Debug\MCSFramework.Model.IPT.pdb
+I:\FirmusImportExcel\MCSFramework.Model.IPT\bin\Debug\MCSFramework.IFStrategy.dll
+I:\FirmusImportExcel\MCSFramework.Model.IPT\bin\Debug\MCSFramework.Model.dll
+I:\FirmusImportExcel\MCSFramework.Model.IPT\obj\Debug\MCSFramework.Model.IPT.csprojResolveAssemblyReference.cache
+I:\FirmusImportExcel\MCSFramework.Model.IPT\obj\Debug\MCSFramework.Model.IPT.dll
+I:\FirmusImportExcel\MCSFramework.Model.IPT\obj\Debug\MCSFramework.Model.IPT.pdb

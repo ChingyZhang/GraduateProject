@@ -1,0 +1,6 @@
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.VST\bin\Debug\MCSFramework.Model.VST.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.VST\bin\Debug\MCSFramework.Model.VST.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.VST\bin\Debug\MCSFramework.IFStrategy.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.VST\obj\Debug\MCSFramework.Model.VST.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.VST\obj\Debug\MCSFramework.Model.VST.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.VST\obj\Debug\Model.VST.csprojResolveAssemblyReference.cache

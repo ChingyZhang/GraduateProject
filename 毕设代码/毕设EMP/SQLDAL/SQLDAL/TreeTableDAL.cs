@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Text;
 using MCSFramework.DBUtility;
 using MCSFramework.Common;
+//using MCSFramework.Common;
 
 namespace MCSFramework.SQLDAL
 {

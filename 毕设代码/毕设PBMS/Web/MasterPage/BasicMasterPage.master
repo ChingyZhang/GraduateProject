@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BasicMasterPage.master.cs"
+    Inherits="MasterPage_BasicMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server" webpagesubcode="">
+    <title>中粮可口可乐(山东)PBMS</title>
+    <base target="_self" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <script type="text/javascript" language="javascript">
+        if (self.frameElement == null) {
+            location.href = location.href.substring(0, location.href.indexOf("SubModule/") + 10) + "?URL=" + encodeURIComponent(location.href);
+        }
+    </script>
+
+</head>
+<body id="body1" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ToolkitScriptManager1" runat="server"></asp:ScriptManager>
+
+        <div id="divPage" class="page" style="height:100%">
+            <asp:UpdateProgress ID="UpdateProgress2" runat="server" DisplayAfter="500">
+                <ProgressTemplate>
+                    <div style="text-align: center">
+                        <asp:Image ID="Image10" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                        <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                        <asp:Image ID="Image7" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                        <span style="color: White">页面加载中,请耐心稍候...</span>
+                    </div>
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+            <div style="width: 98%;height:100%">
+                <!--startprint-->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!--endprint-->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div style="width: 100%;text-align: center">
+                <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="0" DynamicLayout="False">
+                    <ProgressTemplate>
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/WebWait.gif" />
+                        请稍候...
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" language="javascript">
+        //document.getElementById("divPage").style.height = (window.screen.height - 380).toString() + "px";
+
+        //alert(document.getElementById("divPage").style.height);
+    </script>
+
+</body>
+</html>

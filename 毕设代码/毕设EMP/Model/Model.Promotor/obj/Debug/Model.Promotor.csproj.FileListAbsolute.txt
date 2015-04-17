@@ -15,3 +15,4 @@ E:\毕设\毕设代码\毕设EMP\Model\Model.Promotor\bin\Debug\MCSFramework.Mod
 E:\毕设\毕设代码\毕设EMP\Model\Model.Promotor\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\Model\Model.Promotor\obj\Debug\MCSFramework.Model.Promotor.dll
 E:\毕设\毕设代码\毕设EMP\Model\Model.Promotor\obj\Debug\MCSFramework.Model.Promotor.pdb
+E:\毕设\毕设代码\毕设EMP\Model\Model.Promotor\obj\Debug\Model.Promotor.csprojResolveAssemblyReference.cache

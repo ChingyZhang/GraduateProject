@@ -24,7 +24,6 @@ E:\毕设\毕设EMP\BLL\BLL\obj\Debug\MCSFramework.BLL.dll
 E:\毕设\毕设EMP\BLL\BLL\obj\Debug\MCSFramework.BLL.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.BLL.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.BLL.pdb
-E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.Common.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.Model.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.SQLDAL.dll
@@ -34,3 +33,4 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.SQLDAL.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\obj\Debug\MCSFramework.BLL.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL\obj\Debug\MCSFramework.BLL.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL\bin\Debug\MCSFramework.Common.dll

@@ -1,0 +1,6 @@
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.RPT\bin\Debug\MCSFramework.Model.RPT.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.RPT\bin\Debug\MCSFramework.Model.RPT.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.RPT\bin\Debug\MCSFramework.IFStrategy.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.RPT\obj\Debug\MCSFramework.Model.RPT.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.RPT\obj\Debug\MCSFramework.Model.RPT.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.RPT\obj\Debug\Model.RPT.csprojResolveAssemblyReference.cache

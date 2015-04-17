@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:n0="urn:sap-com:document:sap:rfc:functions" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:tns="urn:sap-com:document:sap:rfc:functions" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char18">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="18" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char8">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="clnt3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="curr13.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="13" />
+          <xsd:fractionDigits value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="date">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+          <xsd:pattern value="\d\d\d\d-\d\d-\d\d" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="quantum13.3">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="13" />
+          <xsd:fractionDigits value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="time">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="8" />
+          <xsd:pattern value="\d\d:\d\d:\d\d" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions" />
+      <xsd:complexType name="Ztdplog">
+        <xsd:sequence>
+          <xsd:element name="Mandt" type="n0:clnt3" />
+          <xsd:element name="Kunag" type="n0:char10" />
+          <xsd:element name="Vgbel" type="n0:char10" />
+          <xsd:element name="WadatIst" type="n0:date" />
+          <xsd:element name="Vkorg" type="n0:char4" />
+          <xsd:element name="Werks" type="n0:char4" />
+          <xsd:element name="Matnr" type="n0:char18" />
+          <xsd:element name="Charg" type="n0:char10" />
+          <xsd:element name="Hsdat" type="n0:date" />
+          <xsd:element name="Fkimg" type="n0:quantum13.3" />
+          <xsd:element name="Kzwi" type="n0:curr13.2" />
+          <xsd:element name="Kzwi5" type="n0:curr13.2" />
+          <xsd:element name="Kzwi1" type="n0:curr13.2" />
+          <xsd:element name="Fkart" type="n0:char4" />
+          <xsd:element name="Mark1" type="n0:char1" />
+          <xsd:element name="Mark2" type="n0:char1" />
+          <xsd:element name="Mark3" type="n0:char1" />
+          <xsd:element name="Zdate" type="n0:date" />
+          <xsd:element name="Ztime" type="n0:time" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TableOfZtdplog">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:Ztdplog" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZSdSdSh">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="Ampm" type="n0:char1" />
+            <xsd:element minOccurs="0" name="Zbukrs" type="n0:char4" />
+            <xsd:element minOccurs="0" name="Zdate" type="n0:char8" />
+            <xsd:element minOccurs="0" name="Zztdpsh" type="tns:TableOfZtdplog" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZSdSdShResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Zztdpsh" type="tns:TableOfZtdplog" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZSdSdSh">
+    <wsdl:part name="parameters" element="tns:ZSdSdSh" />
+  </wsdl:message>
+  <wsdl:message name="ZSdSdShResponse">
+    <wsdl:part name="parameters" element="tns:ZSdSdShResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Z_SD_SD_SH">
+    <wsdl:operation name="ZSdSdSh">
+      <wsdl:input message="tns:ZSdSdSh" />
+      <wsdl:output message="tns:ZSdSdShResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Z_SD_SD_SHSoapBinding" type="tns:Z_SD_SD_SH">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZSdSdSh">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Z_SD_SD_SHService">
+    <wsdl:port name="Z_SD_SD_SHSoapBinding" binding="tns:Z_SD_SD_SHSoapBinding">
+      <soap:address location="http://sapeccprd1.cofco.com:8001/sap/bc/srt/rfc/sap/Z_SD_SD_SH?sap-client=800" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

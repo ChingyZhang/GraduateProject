@@ -42,3 +42,13 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.Model.QNA.pd
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\obj\Debug\BLL.QNA.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\obj\Debug\MCSFramework.BLL.QNA.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\obj\Debug\MCSFramework.BLL.QNA.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.BLL.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.SQLDAL.QNA.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.DBUtility.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.SQLDAL.QNA.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.SQLDAL.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.BLL.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.QNA\bin\Debug\MCSFramework.Common.dll

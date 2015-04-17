@@ -1,0 +1,14 @@
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.BLL.IPT.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.BLL.IPT.pdb
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.BLL.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.IFStrategy.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\obj\Debug\MCSFramework.BLL.IPT.csprojResolveAssemblyReference.cache
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\obj\Debug\MCSFramework.BLL.IPT.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\obj\Debug\MCSFramework.BLL.IPT.pdb
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.Common.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.Model.IPT.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.SQLDAL.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.SQLDAL.IPT.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.DBUtility.dll
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.Model.IPT.pdb
+I:\FirmusImportExcel\MCSFramework.BLL.IPT\bin\Debug\MCSFramework.SQLDAL.IPT.pdb

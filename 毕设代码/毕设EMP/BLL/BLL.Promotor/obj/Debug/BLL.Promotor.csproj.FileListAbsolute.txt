@@ -66,11 +66,8 @@ E:\毕设\毕设EMP\BLL\BLL.Promotor\obj\Debug\MCSFramework.BLL.Promotor.dll
 E:\毕设\毕设EMP\BLL\BLL.Promotor\obj\Debug\MCSFramework.BLL.Promotor.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.Promotor.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.Promotor.pdb
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.CM.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.FNA.dll
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.Pub.dll
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Common.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.IFStrategy.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Model.CM.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Model.dll
@@ -87,7 +84,6 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Model.F
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Model.Promotor.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.SQLDAL.Promotor.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.FNA.pdb
-E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.CM.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Model.pdb
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Model.CM.pdb
@@ -97,3 +93,10 @@ E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.SQLDAL.
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\obj\Debug\BLL.Promotor.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\obj\Debug\MCSFramework.BLL.Promotor.dll
 E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\obj\Debug\MCSFramework.BLL.Promotor.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Model.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.CM.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.Pub.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.BLL.Pub.pdb
+E:\毕设\毕设代码\毕设EMP\BLL\BLL.Promotor\bin\Debug\MCSFramework.SQLDAL.Pub.pdb

@@ -1,0 +1,7 @@
+F:\TFS\COFCO_Project\PBMS.root\Model\Model\bin\Debug\MCSFramework.Model.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model\bin\Debug\MCSFramework.Model.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model\bin\Debug\MCSFramework.Common.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model\bin\Debug\MCSFramework.IFStrategy.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model\obj\Debug\MCSFramework.Model.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model\obj\Debug\MCSFramework.Model.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

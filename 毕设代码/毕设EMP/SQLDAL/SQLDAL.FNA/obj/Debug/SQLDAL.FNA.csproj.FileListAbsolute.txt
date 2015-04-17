@@ -29,3 +29,14 @@ E:\毕设\毕设EMP\SQLDAL\SQLDAL.FNA\obj\Debug\MCSFramework.SQLDAL.FNA.pdb
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\obj\Debug\SQLDAL.FNA.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\obj\Debug\MCSFramework.SQLDAL.FNA.dll
 E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\obj\Debug\MCSFramework.SQLDAL.FNA.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.SQLDAL.FNA.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.SQLDAL.FNA.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.DBUtility.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.IFStrategy.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.Model.FNA.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.Model.FNA.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.SQLDAL.pdb
+E:\毕设\毕设代码\毕设EMP\SQLDAL\SQLDAL.FNA\bin\Debug\MCSFramework.Common.dll

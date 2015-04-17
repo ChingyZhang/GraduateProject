@@ -1,0 +1,6 @@
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.OA\bin\Debug\MCSFramework.Model.OA.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.OA\bin\Debug\MCSFramework.Model.OA.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.OA\bin\Debug\MCSFramework.IFStrategy.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.OA\obj\Debug\MCSFramework.Model.OA.dll
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.OA\obj\Debug\MCSFramework.Model.OA.pdb
+F:\TFS\COFCO_Project\PBMS.root\Model\Model.OA\obj\Debug\Model.OA.csprojResolveAssemblyReference.cache
