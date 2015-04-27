@@ -5,3 +5,10 @@ F:\TFS\COFCO_Project\PBMS.root\Model\Model.PBM\bin\Debug\MCSFramework.IFStrategy
 F:\TFS\COFCO_Project\PBMS.root\Model\Model.PBM\obj\Debug\MCSFramework.Model.PBM.dll
 F:\TFS\COFCO_Project\PBMS.root\Model\Model.PBM\obj\Debug\MCSFramework.Model.PBM.pdb
 F:\TFS\COFCO_Project\PBMS.root\Model\Model.PBM\obj\Debug\Model.PBM.csprojResolveAssemblyReference.cache
+E:\毕设\毕设代码\毕设PBMS\Model\Model.PBM\bin\Debug\MCSFramework.Model.PBM.dll
+E:\毕设\毕设代码\毕设PBMS\Model\Model.PBM\bin\Debug\MCSFramework.Model.PBM.pdb
+E:\毕设\毕设代码\毕设PBMS\Model\Model.PBM\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设代码\毕设PBMS\Model\Model.PBM\bin\Debug\MCSFramework.IFStrategy.dll
+E:\毕设\毕设代码\毕设PBMS\Model\Model.PBM\obj\Debug\Model.PBM.csprojResolveAssemblyReference.cache
+E:\毕设\毕设代码\毕设PBMS\Model\Model.PBM\obj\Debug\MCSFramework.Model.PBM.dll
+E:\毕设\毕设代码\毕设PBMS\Model\Model.PBM\obj\Debug\MCSFramework.Model.PBM.pdb

@@ -44,3 +44,16 @@ F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.IPT\obj\Debug\MCSFramework.SQLDAL.I
 F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.IPT\obj\Debug\MCSFramework.SQLDAL.IPT.pdb
 F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.Model.dll
 F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.SQLDAL.IPT.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.SQLDAL.IPT.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.DBUtility.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.IFStrategy.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.Model.IPT.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.Model.IPT.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\obj\Debug\SQLDAL.IPT.csprojResolveAssemblyReference.cache
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\obj\Debug\MCSFramework.SQLDAL.IPT.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.IPT\obj\Debug\MCSFramework.SQLDAL.IPT.pdb

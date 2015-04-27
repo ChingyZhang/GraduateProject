@@ -12,3 +12,17 @@ F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.pd
 F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.VST\obj\Debug\MCSFramework.SQLDAL.VST.dll
 F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.VST\obj\Debug\MCSFramework.SQLDAL.VST.pdb
 F:\TFS\COFCO_Project\PBMS.root\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.SQLDAL.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.SQLDAL.VST.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.SQLDAL.VST.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Common.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.DBUtility.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.IFStrategy.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.VST.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.SQLDAL.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.VST.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.SQLDAL.pdb
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\obj\Debug\SQLDAL.VST.csprojResolveAssemblyReference.cache
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\obj\Debug\MCSFramework.SQLDAL.VST.dll
+E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\obj\Debug\MCSFramework.SQLDAL.VST.pdb
