@@ -258,7 +258,7 @@ public partial class SubModule_PBM_Inventory_InventoryAdjustDetail : System.Web.
                 int.TryParse(d["PreInventoryQuantity"], out inv_quantity);
                 if (inv_quantity < d.DeliveryQuantity)
                 {
-                    MessageBox.Show(this, "盘亏数量不能小于当前库存!");
+                    MessageBox.Show(this, "盘亏数量不能大于当前库存!");
                     return false;
                 }
 
