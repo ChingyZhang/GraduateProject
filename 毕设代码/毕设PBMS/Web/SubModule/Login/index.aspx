@@ -103,8 +103,8 @@
                     <td>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
-                                <td style="height: 89px; width: 229px">
-                                    <img src="../../images/LOGO.png" alt=""></td>
+                                <%--<td style="height: 89px; width: 229px">
+                                    <img src="../../images/LOGO.png" alt=""></td>--%>
                                 <td style="height: 89px; width: 168px">
                                     <table cellpadding="0" cellspacing="0" border="0">
                                         <tr>
@@ -112,7 +112,7 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <span style="color: #ED1C16; font-size: 16px; font-family: 微软雅黑; font-weight: bold;">PBMS分销管理系统</span>
+                                                <span style="color: #ED1C16; font-size: 16px; font-family: 微软雅黑; font-weight: bold;">企业进销存管理系统</span>
                                             </td>
                                         </tr>
                                     </table>

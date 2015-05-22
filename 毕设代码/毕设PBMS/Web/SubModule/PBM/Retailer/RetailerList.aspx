@@ -107,9 +107,9 @@
                                     SortExpression="CM_Client_FullName" />
                                 <asp:TemplateField>
                                     <ItemTemplate>
-                                        <asp:HyperLink ID="view" runat="server" NavigateUrl='<%# Bind("CM_Client_ID","~/SubModule/CM/ClientPictureList.aspx?ClientID={0}")%>'
+                                       <%-- <asp:HyperLink ID="view" runat="server" NavigateUrl='<%# Bind("CM_Client_ID","~/SubModule/CM/ClientPictureList.aspx?ClientID={0}")%>'
                                             Text="图片管理" CssClass="listViewTdLinkS1">
-                                        </asp:HyperLink>
+                                        </asp:HyperLink>--%>
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField Visible="false">

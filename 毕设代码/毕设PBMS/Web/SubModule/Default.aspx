@@ -54,9 +54,9 @@
             <div class="TopBgPosition">
                 <div class="top_logo">
                     <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/SubModule/desktop.aspx">
-                        <asp:Image ID="Image8" runat="server" ImageUrl="~/images/LOGO.png" />
+                        <%--<asp:Image ID="Image8" runat="server" ImageUrl="~/images/LOGO.png" />--%>
                     </asp:HyperLink>
-                    <span style="color:#ED1C16; font-size:16px;font-family:微软雅黑; font-weight: bold;">PBMS分销管理系统</span>
+                    <span style="color: #ED1C16; font-size: 16px; font-family: 微软雅黑; font-weight: bold;">企业进销存管理系统</span>
                 </div>
                 <div class="top_right">
                     <div class="top_rightDiv2">
@@ -71,7 +71,7 @@
                                 <div class="top_bar_div0">
                                     |
                                 </div>
-                                <div class="top_bar_div0">
+                                <%--<div class="top_bar_div0">
                                     <font class="fnt4">
                                         <asp:HyperLink ID="HyperLink3" NavigateUrl="~/SubModule/OA/Mail/index.aspx" Target="_blank"
                                             runat="server" ForeColor="White">
@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="top_bar_div0">
                                     |
-                                </div>
+                                </div>--%>
                                 <div class="top_bar_div0" style="padding-top: 0px">
                                     <iframe id="fr_onlineuser" runat="server" src="" scrolling="no" width="100" height="100%"
                                         frameborder="no" noresize="noresize"></iframe>
@@ -122,11 +122,11 @@
 
             </div>
 
-            <div class="top_bar">
+            <%--<div class="top_bar">
                 <div style="float: right; text-align: center; width: 300px">
                     <asp:Label ID="lbl_now" CssClass="top_bar_text" runat="server"></asp:Label>
                 </div>
-            </div>
+            </div>--%>
 
 
 
@@ -137,7 +137,7 @@
                         frameborder="0" noresize="resize"></iframe>
                 </div>
 
-                <div id="divRight" style="margin-left:5px; height: 100%; float: left; width: 600px"  class="mastercontent">
+                <div id="divRight" style="margin-left: 5px; height: 100%; float: left; width: 600px" class="mastercontent">
                     <!--startprint-->
                     <iframe id="fr_Main" name="fr_Main" runat="server" src="" scrolling="auto" width="100%" height="100%"
                         frameborder="0" noresize="resize"></iframe>
@@ -147,12 +147,11 @@
             </div>
 
         </div>
-        <table id="tr_Bottom" runat="server" border="0" cellpadding="0" cellspacing="0" class="underFooter" style="margin-top:10px"
+        <table id="tr_Bottom" runat="server" border="0" cellpadding="0" cellspacing="0" class="underFooter" style="margin-top: 10px"
             width="100%">
             <tr>
-                <td align="center" class="copyRight" style="height: 38px">
-                    中国银联股份有限公司青岛分公司<br />
-                    <asp:Label ID="lbPageResponseTime" runat="server" Text="80" Visible="false"></asp:Label>                    
+                <td align="center" class="copyRight" style="height: 38px">11温医信管1班张诚<br />
+                    <asp:Label ID="lbPageResponseTime" runat="server" Text="80" Visible="false"></asp:Label>
                 </td>
             </tr>
         </table>
@@ -175,7 +174,7 @@
             document.getElementById("divRight").style.width = (document.body.clientWidth - document.getElementById("divLeft").clientWidth - 70).toString() + "px";
             document.getElementById("MainContent").style.height = (window.screen.height - 320).toString() + "px";
             document.getElementById("fr_leftmenu").style.height = document.getElementById("MainContent").style.height;
-            document.getElementById("fr_Main").style.height = document.getElementById("MainContent").style.height;           
+            document.getElementById("fr_Main").style.height = document.getElementById("MainContent").style.height;
         }
 
         window.onresize();

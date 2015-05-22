@@ -21,8 +21,6 @@ E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model
 E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.VST.dll
 E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.SQLDAL.dll
 E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.VST.pdb
-E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.Model.pdb
-E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\bin\Debug\MCSFramework.SQLDAL.pdb
 E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\obj\Debug\SQLDAL.VST.csprojResolveAssemblyReference.cache
 E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\obj\Debug\MCSFramework.SQLDAL.VST.dll
 E:\毕设\毕设代码\毕设PBMS\SQLDAL\SQLDAL.VST\obj\Debug\MCSFramework.SQLDAL.VST.pdb

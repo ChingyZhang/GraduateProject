@@ -59,7 +59,7 @@ public partial class SubModule_StaffManage_StaffDetail : System.Web.UI.Page
                 }
             }
             #endregion
-            
+
 
             if ((int)ViewState["ID"] > 0)
             {

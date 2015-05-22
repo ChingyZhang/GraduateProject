@@ -23,6 +23,7 @@ public partial class SubModule_Default : System.Web.UI.Page
     protected DateTime _pageInitTime;//= DateTime.Now;           //用于计算页面生成时间
     protected void Page_Init(object sender, EventArgs e)
     {
+        
         _pageInitTime = DateTime.Now;           //记录页面最初生成时间
         try
         {
@@ -49,11 +50,12 @@ public partial class SubModule_Default : System.Web.UI.Page
 
         if (!IsPostBack)
         {
+            //Response.Redirect("~/SubModule/PBM/Retailer/RetailerList.aspx");
             if (ConfigHelper.GetConfigBool("CheckRequstUrlReferrer"))
             {
                 if (Request.UrlReferrer == null || Request.UrlReferrer.Host != Request.Url.Host)
                 {
-                    MessageBox.ShowAndRedirect(this.Page, "页面参数传递错误！", this.ResolveUrl("~/SubModule/Desktop.aspx"));
+                    MessageBox.ShowAndRedirect(this.Page, "页面参数传递错误！", this.ResolveUrl("/PBM/Retailer/RetailerList.aspx"));//~/SubModule/Desktop.aspx
                     return;
                 }
             }
@@ -69,12 +71,12 @@ public partial class SubModule_Default : System.Web.UI.Page
             }
             else
             {
-                fr_Main.Attributes["src"] = "desktop.aspx";
+                fr_Main.Attributes["src"] = "/PBM/Retailer/RetailerList.aspx";//"desktop.aspx";
             }
 
             if (Session["UserName"] == null)
             {
-                MessageBox.ShowAndRedirect(this.Page, "对不起，会话超时，请重新登录!", "/Default.aspx");
+                MessageBox.ShowAndRedirect(this.Page, "对不起，会话超时，请重新登录!", "/PBM/Retailer/RetailerList.aspx");///Default.aspx
                 return;
             }
 
@@ -118,7 +120,7 @@ public partial class SubModule_Default : System.Web.UI.Page
             string userName = Session["UserName"].ToString();
             ML_MailBLL bll = new ML_MailBLL();
             int count = bll.GetNewMailCountByReceiver(userName);
-            this.lb_NewMailCount.Text = count.ToString();
+            //this.lb_NewMailCount.Text = count.ToString();
         }
     }
     protected void Page_PreRender(object sender, EventArgs e)

@@ -24,8 +24,11 @@ public partial class SubModule_Desktop : System.Web.UI.Page
 
     protected void Page_Load(object sender, System.EventArgs e)
     {
+        
         if (!IsPostBack)
         {
+
+            //Response.Redirect("~/SubModule/PBM/Retailer/RetailerList.aspx");
             //Page.DataBind();
 
             if ((int)Session["AccountType"] != 1)
@@ -34,9 +37,11 @@ public partial class SubModule_Desktop : System.Web.UI.Page
                 tbl_MyTask.Visible = false;   //我的任务
                 tbl_BBS1.Visible = false;       //各分论坛战最新发帖
                 tbl_BBS.Visible = false;        //论坛最新发帖及回帖
-                tbl_Decission.Visible = false;  //我的审批                    
+                tbl_Decission.Visible = false;  //我的审批     
+                
             }
-
+            //tbl_Notice.Visible = false;
+            tbl_MyTask.Visible = false;
             if (tbl_MyTask.Visible) BindTodayTask(true);
             if (tbl_Decission.Visible) BindDession();
             if (tbl_Mail.Visible) BindMail();
